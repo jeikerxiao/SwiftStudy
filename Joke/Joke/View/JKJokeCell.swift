@@ -67,7 +67,34 @@ class JKJokeCell: UITableViewCell {
             self.contentLabel!.setHeight(height)
             self.contentLabel!.text = content
             // 内容图片
-            
+            let imgSrc = self.data.stringAttributeForKey("image") as NSString
+            if imgSrc.length == 0 {
+                self.pictureView!.isHidden = true
+                self.bottomView!.setY(self.contentLabel!.bottom())
+            } else {
+                let imageId = self.data.stringAttributeForKey("id") as NSString
+                let prefiximageId = imageId.substring(to: imageId.length - 4)
+                let imagURL = "http://pic.qiushibaike.com/system/pictures/\(prefiximageId)/\(imageId)/small/\(imgSrc)"
+                self.pictureView!.isHidden = false
+                self.pictureView!.setImage(imagURL,placeHolder: UIImage(named: "avatar.jpg"))
+                self.largeImageURL = "http://pic.qiushibaike.com/system/pictures/\(prefiximageId)/\(imageId)/medium/\(imgSrc)"
+                self.pictureView!.setY(self.contentLabel!.bottom()+5)
+                self.bottomView!.setY(self.pictureView!.bottom())
+            }
+            // 显示顶和踩
+            if let votesDict = self.data["votes"] as? NSDictionary {
+                let like  = votesDict.stringAttributeForKey("up")
+                let disLike  = votesDict.stringAttributeForKey("down")
+                self.likeLabel!.text = "顶(\(like))"
+                self.dislikeLabel!.text = "踩(\(disLike))"
+            } else {
+                self.likeLabel!.text = "顶(0)"
+                self.dislikeLabel!.text = "踩(0)"
+                // self.likeLabel!.text = "评论(0)"
+            }
+            // 显示评论数
+            let commentCount = self.data.stringAttributeForKey("comments_count")
+            self.commentLabel!.text = "评论(\(commentCount))"
             
         }
         
