@@ -18,6 +18,14 @@
 		11EF978B201B24AD00AF9283 /* JKJokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF978A201B24AD00AF9283 /* JKJokeTableViewController.swift */; };
 		11EF978E201B24C800AF9283 /* JKAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF978C201B24C800AF9283 /* JKAboutViewController.swift */; };
 		11EF978F201B24C800AF9283 /* JKAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EF978D201B24C800AF9283 /* JKAboutViewController.xib */; };
+		11EF9792201B542C00AF9283 /* JKJokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9790201B542C00AF9283 /* JKJokeCell.swift */; };
+		11EF9793201B542C00AF9283 /* JKJokeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EF9791201B542C00AF9283 /* JKJokeCell.xib */; };
+		11EF9795201C58CF00AF9283 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9794201C58CF00AF9283 /* FileUtil.swift */; };
+		11EF9797201C58F100AF9283 /* NSDictionaryExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9796201C58F100AF9283 /* NSDictionaryExt.swift */; };
+		11EF9799201C598300AF9283 /* NSStringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9798201C598300AF9283 /* NSStringExt.swift */; };
+		11EF979B201C599400AF9283 /* UIImageViewWebExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF979A201C599400AF9283 /* UIImageViewWebExt.swift */; };
+		11EF979D201C59A200AF9283 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF979C201C59A200AF9283 /* UIViewExt.swift */; };
+		11EF979F201C59BD00AF9283 /* JKHttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF979E201C59BD00AF9283 /* JKHttpUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		11EF978A201B24AD00AF9283 /* JKJokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKJokeTableViewController.swift; sourceTree = "<group>"; };
 		11EF978C201B24C800AF9283 /* JKAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutViewController.swift; sourceTree = "<group>"; };
 		11EF978D201B24C800AF9283 /* JKAboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JKAboutViewController.xib; sourceTree = "<group>"; };
+		11EF9790201B542C00AF9283 /* JKJokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKJokeCell.swift; sourceTree = "<group>"; };
+		11EF9791201B542C00AF9283 /* JKJokeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JKJokeCell.xib; sourceTree = "<group>"; };
+		11EF9794201C58CF00AF9283 /* FileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		11EF9796201C58F100AF9283 /* NSDictionaryExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDictionaryExt.swift; sourceTree = "<group>"; };
+		11EF9798201C598300AF9283 /* NSStringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStringExt.swift; sourceTree = "<group>"; };
+		11EF979A201C599400AF9283 /* UIImageViewWebExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewWebExt.swift; sourceTree = "<group>"; };
+		11EF979C201C59A200AF9283 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		11EF979E201C59BD00AF9283 /* JKHttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKHttpUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +155,12 @@
 		11EF9783201B143D00AF9283 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				11EF9794201C58CF00AF9283 /* FileUtil.swift */,
+				11EF9796201C58F100AF9283 /* NSDictionaryExt.swift */,
+				11EF9798201C598300AF9283 /* NSStringExt.swift */,
+				11EF979A201C599400AF9283 /* UIImageViewWebExt.swift */,
+				11EF979C201C59A200AF9283 /* UIViewExt.swift */,
+				11EF979E201C59BD00AF9283 /* JKHttpUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -146,6 +168,8 @@
 		11EF9784201B146400AF9283 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11EF9790201B542C00AF9283 /* JKJokeCell.swift */,
+				11EF9791201B542C00AF9283 /* JKJokeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +294,7 @@
 			files = (
 				11EF9760201B133300AF9283 /* LaunchScreen.storyboard in Resources */,
 				11EF978F201B24C800AF9283 /* JKAboutViewController.xib in Resources */,
+				11EF9793201B542C00AF9283 /* JKJokeCell.xib in Resources */,
 				11EF975D201B133300AF9283 /* Assets.xcassets in Resources */,
 				11EF975B201B133300AF9283 /* Main.storyboard in Resources */,
 			);
@@ -296,11 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EF9799201C598300AF9283 /* NSStringExt.swift in Sources */,
+				11EF9797201C58F100AF9283 /* NSDictionaryExt.swift in Sources */,
+				11EF979F201C59BD00AF9283 /* JKHttpUtil.swift in Sources */,
 				11EF9789201B15F700AF9283 /* JKMainViewController.swift in Sources */,
+				11EF9795201C58CF00AF9283 /* FileUtil.swift in Sources */,
 				11EF978E201B24C800AF9283 /* JKAboutViewController.swift in Sources */,
+				11EF979D201C59A200AF9283 /* UIViewExt.swift in Sources */,
+				11EF979B201C599400AF9283 /* UIImageViewWebExt.swift in Sources */,
 				11EF9758201B133300AF9283 /* ViewController.swift in Sources */,
 				11EF9756201B133300AF9283 /* AppDelegate.swift in Sources */,
 				11EF978B201B24AD00AF9283 /* JKJokeTableViewController.swift in Sources */,
+				11EF9792201B542C00AF9283 /* JKJokeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
