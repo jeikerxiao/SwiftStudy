@@ -100,6 +100,7 @@ class JKJokeCell: UITableViewCell {
         
     }
     
+    // 通过数据计算 cell 高度
     class func cellHeightByData(_ data:NSDictionary)->CGFloat {
         let width = UIScreen.main.bounds.size.width;
         let content = data.stringAttributeForKey("content")
@@ -110,6 +111,4 @@ class JKJokeCell: UITableViewCell {
         }
         return 59.0 + height + 5.0 + 112.0 + 40.0
     }
-    
-    
 }

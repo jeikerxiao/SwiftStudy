@@ -14,7 +14,7 @@ enum JKJokeTableViewControllerType: Int {
     case imageTruth
 }
 
-class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,JKRefreshViewDelegate {
     
     let identifier = "JKJokeCellIdentifier"
     var jokeType:JKJokeTableViewControllerType = .hotJoke
@@ -22,6 +22,7 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
     var dataArray = NSMutableArray()
     var cellHeight = NSMutableArray()
     var page:Int = 1
+    var refreshView:JKRefreshView?
     
 
     override func viewDidLoad() {
@@ -52,13 +53,19 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
         self.tableView?.separatorStyle = UITableViewCellSeparatorStyle.none
         let nib = UINib(nibName:"JKJokeCell", bundle:nil)
         self.tableView?.register(nib, forCellReuseIdentifier: identifier)
-        
+        // 设置加载更多视图
+        var arr = Bundle.main.loadNibNamed("JKRefreshView", owner: self, options: nil)!
+        self.refreshView = arr[0] as? JKRefreshView
+        self.refreshView!.delegate = self
+        self.tableView!.tableFooterView = self.refreshView
+        // 添加到当前控制器视图上
         self.view.addSubview(self.tableView!)
     }
     
     // 加载数据
     func loadData() {
         let url = urlString()
+        self.refreshView!.startLoading()
         JKHttpUtil.requestWithURL(url, completionHandler: { data in
             if data as! NSObject == NSNull() {
                 UIView.showAlertView("提示", message: "加载失败")
@@ -74,6 +81,7 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
             }
             // 重新加载数据
             self.tableView!.reloadData()
+            self.refreshView!.stopLoadin()
             self.page += 1;
         })
     }
@@ -121,7 +129,7 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
 //        self.navigationController!.pushViewController(commentsVC, animated: true)
     }
     // 刷新视图
-//    func refreshView(_ refreshView:JKRefreshView,didClickButton btn:UIButton) {
-//        loadData()
-//    }
+    func refreshView(_ refreshView:JKRefreshView,didClickButton btn:UIButton) {
+        loadData()
+    }
 }
