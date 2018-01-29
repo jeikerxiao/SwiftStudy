@@ -87,7 +87,7 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
             }
             // 重新加载数据
             self.tableView!.reloadData()
-            self.refreshView!.stopLoadin()
+            self.refreshView!.stopLoading()
             self.page += 1;
         })
     }
@@ -126,14 +126,14 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
         let index = indexPath.row
         return self.cellHeight[index] as! CGFloat
     }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let index = indexPath.row
-//        let data = self.dataArray[index] as! NSDictionary
-//        let commentsVC = YRCommentsViewController(nibName :nil, bundle: nil)
-//        commentsVC.jokeId = data.stringAttributeForKey("id")
-//        self.navigationController!.pushViewController(commentsVC, animated: true)
-//    }
+    // 点击Cell 进入评论
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        let data = self.dataArray[index] as! NSDictionary
+        let commentsVC = JKCommentViewController(nibName :nil, bundle: nil)
+        commentsVC.jokeId = data.stringAttributeForKey("id")
+        self.navigationController!.pushViewController(commentsVC, animated: true)
+    }
     // 刷新视图,加载数据
     func refreshView(_ refreshView:JKRefreshView,didClickButton btn:UIButton) {
         loadData()

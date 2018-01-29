@@ -33,7 +33,7 @@ class JKRefreshView: UIView {
         self.indicator!.startAnimating()
     }
     // 停止加载
-    func stopLoadin() {
+    func stopLoading() {
         self.button!.setTitle("点击加载更多", for: UIControlState())
         self.indicator!.isHidden = true
         self.indicator!.stopAnimating()

@@ -32,6 +32,9 @@
 		11EF97A7201DB06500AF9283 /* JKImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97A6201DB06500AF9283 /* JKImageViewController.swift */; };
 		11EF97AB201EC8A100AF9283 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11EF97A9201EC8A100AF9283 /* avatar.jpg */; };
 		11EF97AC201EC8A100AF9283 /* me.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11EF97AA201EC8A100AF9283 /* me.jpeg */; };
+		11EF97AF201EC9AD00AF9283 /* JKCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97AD201EC9AD00AF9283 /* JKCommentCell.swift */; };
+		11EF97B0201EC9AD00AF9283 /* JKCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EF97AE201EC9AD00AF9283 /* JKCommentCell.xib */; };
+		11EF97B2201ECECF00AF9283 /* JKCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97B1201ECECF00AF9283 /* JKCommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		11EF97A6201DB06500AF9283 /* JKImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKImageViewController.swift; sourceTree = "<group>"; };
 		11EF97A9201EC8A100AF9283 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		11EF97AA201EC8A100AF9283 /* me.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpeg; sourceTree = "<group>"; };
+		11EF97AD201EC9AD00AF9283 /* JKCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKCommentCell.swift; sourceTree = "<group>"; };
+		11EF97AE201EC9AD00AF9283 /* JKCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JKCommentCell.xib; sourceTree = "<group>"; };
+		11EF97B1201ECECF00AF9283 /* JKCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKCommentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,8 @@
 				11EF97A0201DA68100AF9283 /* JKRefreshView.swift */,
 				11EF97A2201DA6BD00AF9283 /* JKRefreshView.xib */,
 				11EF97A4201DACE300AF9283 /* JKImageZoomingView.swift */,
+				11EF97AD201EC9AD00AF9283 /* JKCommentCell.swift */,
+				11EF97AE201EC9AD00AF9283 /* JKCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 				11EF978C201B24C800AF9283 /* JKAboutViewController.swift */,
 				11EF978D201B24C800AF9283 /* JKAboutViewController.xib */,
 				11EF97A6201DB06500AF9283 /* JKImageViewController.swift */,
+				11EF97B1201ECECF00AF9283 /* JKCommentViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -320,6 +329,7 @@
 			files = (
 				11EF9760201B133300AF9283 /* LaunchScreen.storyboard in Resources */,
 				11EF97AB201EC8A100AF9283 /* avatar.jpg in Resources */,
+				11EF97B0201EC9AD00AF9283 /* JKCommentCell.xib in Resources */,
 				11EF97A3201DA6BD00AF9283 /* JKRefreshView.xib in Resources */,
 				11EF978F201B24C800AF9283 /* JKAboutViewController.xib in Resources */,
 				11EF9793201B542C00AF9283 /* JKJokeCell.xib in Resources */,
@@ -356,6 +366,7 @@
 				11EF9789201B15F700AF9283 /* JKMainViewController.swift in Sources */,
 				11EF97A7201DB06500AF9283 /* JKImageViewController.swift in Sources */,
 				11EF97A1201DA68100AF9283 /* JKRefreshView.swift in Sources */,
+				11EF97AF201EC9AD00AF9283 /* JKCommentCell.swift in Sources */,
 				11EF9795201C58CF00AF9283 /* FileUtil.swift in Sources */,
 				11EF978E201B24C800AF9283 /* JKAboutViewController.swift in Sources */,
 				11EF979D201C59A200AF9283 /* UIViewExt.swift in Sources */,
@@ -365,6 +376,7 @@
 				11EF978B201B24AD00AF9283 /* JKJokeTableViewController.swift in Sources */,
 				11EF9792201B542C00AF9283 /* JKJokeCell.swift in Sources */,
 				11EF97A5201DACE300AF9283 /* JKImageZoomingView.swift in Sources */,
+				11EF97B2201ECECF00AF9283 /* JKCommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
