@@ -27,7 +27,7 @@ class JKJokeCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
-        print("awakeFromNib")
+
         let tap = UITapGestureRecognizer(target: self, action: #selector(JKJokeCell.imageViewTapped(_:)))
         self.pictureView!.addGestureRecognizer(tap)
     }
