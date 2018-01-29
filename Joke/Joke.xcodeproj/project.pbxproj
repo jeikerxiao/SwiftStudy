@@ -28,6 +28,10 @@
 		11EF979F201C59BD00AF9283 /* JKHttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF979E201C59BD00AF9283 /* JKHttpUtil.swift */; };
 		11EF97A1201DA68100AF9283 /* JKRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97A0201DA68100AF9283 /* JKRefreshView.swift */; };
 		11EF97A3201DA6BD00AF9283 /* JKRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EF97A2201DA6BD00AF9283 /* JKRefreshView.xib */; };
+		11EF97A5201DACE300AF9283 /* JKImageZoomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97A4201DACE300AF9283 /* JKImageZoomingView.swift */; };
+		11EF97A7201DB06500AF9283 /* JKImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97A6201DB06500AF9283 /* JKImageViewController.swift */; };
+		11EF97AB201EC8A100AF9283 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11EF97A9201EC8A100AF9283 /* avatar.jpg */; };
+		11EF97AC201EC8A100AF9283 /* me.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 11EF97AA201EC8A100AF9283 /* me.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		11EF979E201C59BD00AF9283 /* JKHttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKHttpUtil.swift; sourceTree = "<group>"; };
 		11EF97A0201DA68100AF9283 /* JKRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKRefreshView.swift; sourceTree = "<group>"; };
 		11EF97A2201DA6BD00AF9283 /* JKRefreshView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JKRefreshView.xib; sourceTree = "<group>"; };
+		11EF97A4201DACE300AF9283 /* JKImageZoomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKImageZoomingView.swift; sourceTree = "<group>"; };
+		11EF97A6201DB06500AF9283 /* JKImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKImageViewController.swift; sourceTree = "<group>"; };
+		11EF97A9201EC8A100AF9283 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		11EF97AA201EC8A100AF9283 /* me.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,7 @@
 				11EF9785201B146C00AF9283 /* ViewController */,
 				11EF9784201B146400AF9283 /* View */,
 				11EF9783201B143D00AF9283 /* Util */,
+				11EF97A8201EC86700AF9283 /* image */,
 				11EF9757201B133300AF9283 /* ViewController.swift */,
 				11EF9759201B133300AF9283 /* Main.storyboard */,
 				11EF975C201B133300AF9283 /* Assets.xcassets */,
@@ -176,6 +185,7 @@
 				11EF9791201B542C00AF9283 /* JKJokeCell.xib */,
 				11EF97A0201DA68100AF9283 /* JKRefreshView.swift */,
 				11EF97A2201DA6BD00AF9283 /* JKRefreshView.xib */,
+				11EF97A4201DACE300AF9283 /* JKImageZoomingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,8 +197,18 @@
 				11EF978A201B24AD00AF9283 /* JKJokeTableViewController.swift */,
 				11EF978C201B24C800AF9283 /* JKAboutViewController.swift */,
 				11EF978D201B24C800AF9283 /* JKAboutViewController.xib */,
+				11EF97A6201DB06500AF9283 /* JKImageViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		11EF97A8201EC86700AF9283 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				11EF97A9201EC8A100AF9283 /* avatar.jpg */,
+				11EF97AA201EC8A100AF9283 /* me.jpeg */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +319,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11EF9760201B133300AF9283 /* LaunchScreen.storyboard in Resources */,
+				11EF97AB201EC8A100AF9283 /* avatar.jpg in Resources */,
 				11EF97A3201DA6BD00AF9283 /* JKRefreshView.xib in Resources */,
 				11EF978F201B24C800AF9283 /* JKAboutViewController.xib in Resources */,
 				11EF9793201B542C00AF9283 /* JKJokeCell.xib in Resources */,
+				11EF97AC201EC8A100AF9283 /* me.jpeg in Resources */,
 				11EF975D201B133300AF9283 /* Assets.xcassets in Resources */,
 				11EF975B201B133300AF9283 /* Main.storyboard in Resources */,
 			);
@@ -332,6 +354,7 @@
 				11EF9797201C58F100AF9283 /* NSDictionaryExt.swift in Sources */,
 				11EF979F201C59BD00AF9283 /* JKHttpUtil.swift in Sources */,
 				11EF9789201B15F700AF9283 /* JKMainViewController.swift in Sources */,
+				11EF97A7201DB06500AF9283 /* JKImageViewController.swift in Sources */,
 				11EF97A1201DA68100AF9283 /* JKRefreshView.swift in Sources */,
 				11EF9795201C58CF00AF9283 /* FileUtil.swift in Sources */,
 				11EF978E201B24C800AF9283 /* JKAboutViewController.swift in Sources */,
@@ -341,6 +364,7 @@
 				11EF9756201B133300AF9283 /* AppDelegate.swift in Sources */,
 				11EF978B201B24AD00AF9283 /* JKJokeTableViewController.swift in Sources */,
 				11EF9792201B542C00AF9283 /* JKJokeCell.swift in Sources */,
+				11EF97A5201DACE300AF9283 /* JKImageZoomingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

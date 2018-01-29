@@ -34,13 +34,19 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
+        super.viewWillAppear(animated)
+        // 添加观察者
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(JKJokeTableViewController.imageViewTapped(_:)), name: NSNotification.Name(rawValue: "imageViewTapped"),
+                                                 object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+        // 移除观察者
+        NotificationCenter.default.removeObserver(self,
+                                                    name: NSNotification.Name(rawValue: "imageViewTapped"),
+                                                  object: nil)
     }
     
     // 设置视图
@@ -121,15 +127,23 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
         return self.cellHeight[index] as! CGFloat
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let index = indexPath.row
 //        let data = self.dataArray[index] as! NSDictionary
 //        let commentsVC = YRCommentsViewController(nibName :nil, bundle: nil)
 //        commentsVC.jokeId = data.stringAttributeForKey("id")
 //        self.navigationController!.pushViewController(commentsVC, animated: true)
-    }
-    // 刷新视图
+//    }
+    // 刷新视图,加载数据
     func refreshView(_ refreshView:JKRefreshView,didClickButton btn:UIButton) {
         loadData()
+    }
+    // 点击图片，显示放大图
+    @objc func imageViewTapped(_ noti:Notification) {
+        print("JokeTableViewController 点击图片")
+        let imageURL = noti.object as! String
+        let imageVC = JKImageViewController(nibName: nil, bundle: nil)
+        imageVC.imageURL = imageURL
+        self.navigationController!.pushViewController(imageVC, animated: true)
     }
 }

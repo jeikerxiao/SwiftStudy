@@ -27,6 +27,9 @@ class JKJokeCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
+        print("awakeFromNib")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(JKJokeCell.imageViewTapped(_:)))
+        self.pictureView!.addGestureRecognizer(tap)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -90,14 +93,11 @@ class JKJokeCell: UITableViewCell {
             } else {
                 self.likeLabel!.text = "顶(0)"
                 self.dislikeLabel!.text = "踩(0)"
-                // self.likeLabel!.text = "评论(0)"
             }
             // 显示评论数
             let commentCount = self.data.stringAttributeForKey("comments_count")
             self.commentLabel!.text = "评论(\(commentCount))"
-            
         }
-        
     }
     
     // 通过数据计算 cell 高度
@@ -110,5 +110,11 @@ class JKJokeCell: UITableViewCell {
             return 59.0 + height + 40.0
         }
         return 59.0 + height + 5.0 + 112.0 + 40.0
+    }
+
+    // 点击图片
+    @objc func imageViewTapped(_ sender:UITapGestureRecognizer) {
+        print("JokeCell image Tapped")
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "imageViewTapped"), object: self.largeImageURL)
     }
 }
