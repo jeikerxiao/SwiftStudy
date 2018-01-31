@@ -12,6 +12,8 @@ target 'Joke' do
     pod 'SwiftyJSON'                # Json解析
     pod 'HandyJSON', '4.0.0-beta.1' # Json <-> Model
     pod 'XCGLogger', '~> 6.0.2'     # 日志框架
+    pod 'SnapKit'                   # 代码布局
+    pod 'R.swift'                   # 优雅使用资源文件
     
     target 'JokeTests' do
         inherit! :search_paths
