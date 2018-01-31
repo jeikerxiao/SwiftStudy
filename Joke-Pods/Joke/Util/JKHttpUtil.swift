@@ -15,7 +15,8 @@ class JKHttpUtil: NSObject {
     override init() {
         super.init();
     }
-    
+
+/**
     class func requestWithURL(_ urlString:String, completionHandler:@escaping (_ data:AnyObject)->Void)
     {
         let URL = Foundation.URL(string: urlString);
@@ -37,7 +38,7 @@ class JKHttpUtil: NSObject {
             }
         })
     }
-    
+*/
     class func request(_ urlString:String, completionHandler:@escaping (_ data:AnyObject)->Void) {
         Alamofire.request(urlString).responseJSON { response in
             

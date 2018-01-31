@@ -58,7 +58,6 @@ class JKJokeCell: UITableViewCell {
                     let userId = idNumber.stringValue as NSString
                     let prefixUserId = userId.substring(to: userId.length - 4)
                     let userImageURL = "http://pic.qiushibaike.com/system/avtnew/\(prefixUserId)/\(userId)/medium/\(userIcon)"
-//                    self.avatarView!.setImage(userImageURL, placeHolder: UIImage(named: "avatar.jpg"))
                     let userImage = URL(string: userImageURL)
                     self.avatarView!.kf.setImage(with: userImage, placeholder: R.image.avatarJpg())
                 }
@@ -95,10 +94,8 @@ class JKJokeCell: UITableViewCell {
                 self.bottomView!.setY(self.contentLabel!.bottom())
             } else {
                 self.pictureView!.isHidden = false
-//                self.pictureView!.setImage(imagURL, placeHolder: UIImage(named: "avatar.jpg"))
                 let url = URL(string: imageURL)
                 self.pictureView!.kf.setImage(with: url, placeholder: R.image.avatarJpg())
-//                self.largeImageURL = "http://pic.qiushibaike.com/system/pictures/\(prefiximageId)/\(imageId)/medium/\(imgSrc)"
                 self.largeImageURL = imageLargeURL
                 self.pictureView!.setY(self.contentLabel!.bottom()+5)
                 self.bottomView!.setY(self.pictureView!.bottom())

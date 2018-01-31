@@ -77,5 +77,18 @@ extension UIView {
         alert.message = message
         alert.addButton(withTitle: "好")
         alert.show()
+        
+//        let alertController = UIAlertController(title: title,
+//                                                message: message,
+//                                                preferredStyle: .alert)
+//        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+//        let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+//            action in
+//            log.info("点击了确定")
+//        })
+//        alertController.addAction(cancelAction)
+//        alertController.addAction(okAction)
+//        let vc = UIApplication.shared.windows[0].rootViewController
+//        vc!.present(alertController, animated: true, completion: nil)
     }
 }

@@ -53,7 +53,6 @@ class JKImageZoomingView: UIScrollView,UIScrollViewDelegate {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-//        self.imageView!.setImage(self.imageURL, placeHolder: placeHolder)
         // 使用三方库工具下载图片
         let url = URL(string: self.imageURL)
         self.imageView!.kf.setImage(with: url, placeholder: placeHolder)

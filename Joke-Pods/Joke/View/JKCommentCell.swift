@@ -46,7 +46,6 @@ class JKCommentCell: UITableViewCell {
             if thumb as! NSObject != NSNull() {
                 let userImageURL = userDict["thumb"] as! NSString as String
                 let userIconURL = "http:" + userImageURL
-//                self.avatarView!.setImage(userImageURL, placeHolder: UIImage(named: "avatar.jpg"))
                 self.avatarView!.kf.setImage(with: URL(string: userIconURL), placeholder: R.image.avatarJpg())
             } else {
                 self.avatarView!.image = R.image.avatarJpg()
