@@ -23,7 +23,6 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
     var cellHeight = NSMutableArray()
     var page:Int = 1
     var refreshView:JKRefreshView?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +71,8 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
     func loadData() {
         let url = urlString()
         self.refreshView!.startLoading()
-        JKHttpUtil.requestWithURL(url, completionHandler: { data in
+        log.info("加载数据")
+        JKHttpUtil.request(url, completionHandler: { data in
             if data as! NSObject == NSNull() {
                 UIView.showAlertView("提示", message: "加载失败")
                 return
@@ -140,7 +140,6 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     // 点击图片，显示放大图
     @objc func imageViewTapped(_ noti:Notification) {
-        print("JokeTableViewController 点击图片")
         let imageURL = noti.object as! String
         let imageVC = JKImageViewController(nibName: nil, bundle: nil)
         imageVC.imageURL = imageURL

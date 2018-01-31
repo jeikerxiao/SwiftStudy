@@ -78,17 +78,17 @@ class JKJokeCell: UITableViewCell {
             var imageURL:String = ""
             var imageLargeURL:String = ""
             if contentType == "video" {
-                print("视频类型")
+//                print("视频类型")
                 imageURL = self.data.stringAttributeForKey("pic_url") as String
                 imageLargeURL = imageURL
             }
             if contentType == "image" {
-                print("图片")
+//                print("图片")
                 imageURL = "http:" + self.data.stringAttributeForKey("low_loc") as String
                 imageLargeURL = "http:" + self.data.stringAttributeForKey("high_loc") as String
             }
             if contentType == "word" {
-                print("文字")
+//                print("文字")
             }
             if imgSrc.length == 0 {
                 self.pictureView!.isHidden = true
@@ -133,7 +133,6 @@ class JKJokeCell: UITableViewCell {
 
     // 点击图片
     @objc func imageViewTapped(_ sender:UITapGestureRecognizer) {
-        print("JokeCell image Tapped")
         NotificationCenter.default.post(name: Notification.Name(rawValue: "imageViewTapped"), object: self.largeImageURL)
     }
 }

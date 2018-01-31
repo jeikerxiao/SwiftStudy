@@ -38,6 +38,7 @@
 		11EF97B520203D5500AF9283 /* AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97B420203D5500AF9283 /* AlamofireTests.swift */; };
 		11EF97B72020480E00AF9283 /* HandyJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97B62020480E00AF9283 /* HandyJsonTests.swift */; };
 		11EF97B92020514C00AF9283 /* KingfisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97B82020514C00AF9283 /* KingfisherTests.swift */; };
+		11EF97BD20214BB200AF9283 /* JKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF97BC20214BB200AF9283 /* JKResult.swift */; };
 		28A7DCC02442F3771041B095 /* Pods_Joke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6B67F89EEE024DF61A0AFE /* Pods_Joke.framework */; };
 		DF13B7EB0745175762F790FA /* Pods_JokeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A767CE23A30955389243FFF /* Pods_JokeTests.framework */; };
 		EB0F46FCD4F2356677F6866F /* Pods_JokeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC97550B2917D4F2426F3BF /* Pods_JokeUITests.framework */; };
@@ -98,6 +99,7 @@
 		11EF97B420203D5500AF9283 /* AlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTests.swift; sourceTree = "<group>"; };
 		11EF97B62020480E00AF9283 /* HandyJsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJsonTests.swift; sourceTree = "<group>"; };
 		11EF97B82020514C00AF9283 /* KingfisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherTests.swift; sourceTree = "<group>"; };
+		11EF97BC20214BB200AF9283 /* JKResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKResult.swift; sourceTree = "<group>"; };
 		4F38FA20218A00447B959B23 /* Pods-JokeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JokeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JokeTests/Pods-JokeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		520C72C7FB614D4A5B9FF1C0 /* Pods-JokeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JokeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JokeUITests/Pods-JokeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		59370F3AA623CD9ABAEE7B3C /* Pods-Joke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke/Pods-Joke.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				11EF9755201B133300AF9283 /* AppDelegate.swift */,
 				11EF9785201B146C00AF9283 /* ViewController */,
 				11EF9784201B146400AF9283 /* View */,
+				11EF97BB20214B2A00AF9283 /* Model */,
 				11EF9783201B143D00AF9283 /* Util */,
 				11EF97A8201EC86700AF9283 /* image */,
 				11EF9757201B133300AF9283 /* ViewController.swift */,
@@ -244,6 +247,14 @@
 				11EF97AA201EC8A100AF9283 /* me.jpeg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		11EF97BB20214B2A00AF9283 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11EF97BC20214BB200AF9283 /* JKResult.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		46119BE3572C8A031A5C965A /* Frameworks */ = {
@@ -538,14 +549,22 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -591,6 +610,7 @@
 				11EF9792201B542C00AF9283 /* JKJokeCell.swift in Sources */,
 				11EF97A5201DACE300AF9283 /* JKImageZoomingView.swift in Sources */,
 				11EF97B2201ECECF00AF9283 /* JKCommentViewController.swift in Sources */,
+				11EF97BD20214BB200AF9283 /* JKResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

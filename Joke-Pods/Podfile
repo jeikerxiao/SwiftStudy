@@ -6,10 +6,12 @@ target 'Joke' do
   	use_frameworks!
 
   	# Pods for Joke
-	pod 'Alamofire'
-	pod 'Kingfisher'
-	pod 'SwiftyJSON'
-    pod 'HandyJSON', '4.0.0-beta.1'
+    pod 'Alamofire'                 # 网络请求框架
+    pod 'Moya', '~> 10.0'           # 网络请求框架
+    pod 'Kingfisher'                # 图片加载
+    pod 'SwiftyJSON'                # Json解析
+    pod 'HandyJSON', '4.0.0-beta.1' # Json <-> Model
+    pod 'XCGLogger', '~> 6.0.2'     # 日志框架
     
     target 'JokeTests' do
         inherit! :search_paths

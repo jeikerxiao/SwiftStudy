@@ -86,7 +86,5 @@ class AlamofireTests: XCTestCase {
                 print("JSON: \(JSON)")
             }
         }
-        
     }
-    
 }

@@ -56,9 +56,8 @@ class JKCommentViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     func loadData() {
         let url = "http://m2.qiushibaike.com/article/\(self.jokeId!)/comments?count=20&page=\(self.page)"
-        print("评论地址：\(url)")
         self.refreshView!.startLoading()
-        JKHttpUtil.requestWithURL(url,completionHandler:{ data in
+        JKHttpUtil.request(url,completionHandler:{ data in
             
             if data as! NSObject == NSNull() {
                 UIView.showAlertView("提示",message:"加载失败")

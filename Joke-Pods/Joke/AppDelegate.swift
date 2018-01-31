@@ -7,15 +7,37 @@
 //
 
 import UIKit
+import XCGLogger
+
+// 日志框架（定义全局变量）
+let log = XCGLogger.default
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // 设置日志
+        log.setup(level: .debug,
+                  showLogIdentifier: false,
+                  showFunctionName: false,
+                  showThreadName: false,
+                  showLevel: true,
+                  showFileNames: true,
+                  showLineNumbers: true,
+                  showDate: true,
+                  writeToFile: nil,
+                  fileLevel: nil)
+        
+        log.verbose("日志启动成功！")
+        log.debug("日志启动成功！")
+        log.info("日志启动成功！")
+        log.warning("日志启动成功！")
+        log.error("日志启动成功！")
+        log.severe("日志启动成功！")
+        
         // 设置窗体
         self.window = UIWindow(frame: UIScreen.main.bounds)
         // 初始化主视图
@@ -26,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = navigationViewController;
         // 显示
         self.window!.makeKeyAndVisible()
+        
         return true
     }
 
