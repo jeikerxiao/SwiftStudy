@@ -47,9 +47,9 @@ class JKCommentCell: UITableViewCell {
                 let userImageURL = userDict["thumb"] as! NSString as String
                 let userIconURL = "http:" + userImageURL
 //                self.avatarView!.setImage(userImageURL, placeHolder: UIImage(named: "avatar.jpg"))
-                self.avatarView!.kf.setImage(with: URL(string: userIconURL), placeholder: UIImage(named: "avatar.jpg"))
+                self.avatarView!.kf.setImage(with: URL(string: userIconURL), placeholder: R.image.avatarJpg())
             } else {
-                self.avatarView!.image = UIImage(named: "avatar.jpg")
+                self.avatarView!.image = R.image.avatarJpg()
             }
             // 日期
             let timeStamp = userDict.stringAttributeForKey("created_at")
@@ -58,7 +58,7 @@ class JKCommentCell: UITableViewCell {
         } else {
             // 默认显示
             self.nickLabel!.text = "匿名"
-            self.avatarView!.image =  UIImage(named: "avatar.jpg")
+            self.avatarView!.image =  R.image.avatarJpg()
             self.dateLabel!.text = ""
         }
         // 显示评论内容

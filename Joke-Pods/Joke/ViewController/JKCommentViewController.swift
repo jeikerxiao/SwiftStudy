@@ -42,8 +42,8 @@ class JKCommentViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.tableView!.delegate = self;
         self.tableView!.dataSource = self;
         self.tableView!.separatorStyle = UITableViewCellSeparatorStyle.none
-        let nib = UINib(nibName:"JKCommentCell", bundle: nil)
-        
+//        let nib = UINib(nibName:"JKCommentCell", bundle: nil)
+        let nib = R.nib.jkCommentCell()
         self.tableView?.register(nib, forCellReuseIdentifier: identifier)
         
         var arr =  Bundle.main.loadNibNamed("JKRefreshView" ,owner: self, options: nil)!

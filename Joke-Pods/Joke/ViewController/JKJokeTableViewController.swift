@@ -56,7 +56,8 @@ class JKJokeTableViewController: UIViewController,UITableViewDelegate,UITableVie
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.separatorStyle = UITableViewCellSeparatorStyle.none
-        let nib = UINib(nibName:"JKJokeCell", bundle:nil)
+//        let nib = UINib(nibName:"JKJokeCell", bundle:nil)
+        let nib = R.nib.jkJokeCell()
         self.tableView?.register(nib, forCellReuseIdentifier: identifier)
         // 设置加载更多视图
         var arr = Bundle.main.loadNibNamed("JKRefreshView", owner: self, options: nil)!

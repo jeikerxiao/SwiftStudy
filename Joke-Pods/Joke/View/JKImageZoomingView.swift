@@ -13,7 +13,7 @@ class JKImageZoomingView: UIScrollView,UIScrollViewDelegate {
     
     var imageView:UIImageView?
     var imageURL:String!
-    let placeHolder:UIImage = UIImage(named:"avatar.jpg")!
+    let placeHolder:UIImage = R.image.avatarJpg()!
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -88,7 +88,9 @@ class JKMainViewController: UITabBarController {
         vc2.jokeType = .hotJoke
         let vc3 = JKJokeTableViewController()
         vc3.jokeType = .imageTruth
-        let vc4 = JKAboutViewController(nibName: "JKAboutViewController", bundle: nil)
+//        let vc4 = JKAboutViewController(nibName: "JKAboutViewController", bundle: nil)
+        let vc4 = JKAboutViewController(nib: R.nib.jkAboutViewController)
+
         // 添加四个视图到当前主视图
         self.viewControllers = [vc1, vc2, vc3, vc4]
     }

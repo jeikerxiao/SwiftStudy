@@ -60,11 +60,11 @@ class JKJokeCell: UITableViewCell {
                     let userImageURL = "http://pic.qiushibaike.com/system/avtnew/\(prefixUserId)/\(userId)/medium/\(userIcon)"
 //                    self.avatarView!.setImage(userImageURL, placeHolder: UIImage(named: "avatar.jpg"))
                     let userImage = URL(string: userImageURL)
-                    self.avatarView!.kf.setImage(with: userImage, placeholder: UIImage(named: "avatar.jpg"))
+                    self.avatarView!.kf.setImage(with: userImage, placeholder: R.image.avatarJpg())
                 }
             } else {
                 self.nickLabel!.text = "匿名"
-                self.avatarView!.image = UIImage(named:"avatar.jpg")
+                self.avatarView!.image = R.image.avatarJpg()
             }
             // 内容
             let content = self.data.stringAttributeForKey("content")
@@ -97,7 +97,7 @@ class JKJokeCell: UITableViewCell {
                 self.pictureView!.isHidden = false
 //                self.pictureView!.setImage(imagURL, placeHolder: UIImage(named: "avatar.jpg"))
                 let url = URL(string: imageURL)
-                self.pictureView!.kf.setImage(with: url, placeholder: UIImage(named: "avatar.jpg"))
+                self.pictureView!.kf.setImage(with: url, placeholder: R.image.avatarJpg())
 //                self.largeImageURL = "http://pic.qiushibaike.com/system/pictures/\(prefiximageId)/\(imageId)/medium/\(imgSrc)"
                 self.largeImageURL = imageLargeURL
                 self.pictureView!.setY(self.contentLabel!.bottom()+5)
