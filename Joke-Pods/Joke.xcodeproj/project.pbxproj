@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		112175962021A18C005D139B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112175952021A18C005D139B /* R.generated.swift */; };
+		119249F42023001F003A9E8F /* JKAboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F32023001F003A9E8F /* JKAboutTableViewController.swift */; };
+		119249F620230041003A9E8F /* JKAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F520230041003A9E8F /* JKAboutCell.swift */; };
+		119249F820230066003A9E8F /* JKAboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F720230066003A9E8F /* JKAboutViewModel.swift */; };
+		119249FA20230082003A9E8F /* JKAboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F920230082003A9E8F /* JKAboutModel.swift */; };
 		11EF9756201B133300AF9283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9755201B133300AF9283 /* AppDelegate.swift */; };
 		11EF9758201B133300AF9283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9757201B133300AF9283 /* ViewController.swift */; };
 		11EF975B201B133300AF9283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EF9759201B133300AF9283 /* Main.storyboard */; };
@@ -63,6 +67,10 @@
 
 /* Begin PBXFileReference section */
 		112175952021A18C005D139B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		119249F32023001F003A9E8F /* JKAboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutTableViewController.swift; sourceTree = "<group>"; };
+		119249F520230041003A9E8F /* JKAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutCell.swift; sourceTree = "<group>"; };
+		119249F720230066003A9E8F /* JKAboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutViewModel.swift; sourceTree = "<group>"; };
+		119249F920230082003A9E8F /* JKAboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutModel.swift; sourceTree = "<group>"; };
 		11EF9752201B133300AF9283 /* Joke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF9755201B133300AF9283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EF9757201B133300AF9283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +147,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119249EE2022FE76003A9E8F /* About */ = {
+			isa = PBXGroup;
+			children = (
+				119249EF2022FE81003A9E8F /* ViewController */,
+				119249F02022FE8C003A9E8F /* View */,
+				119249F22022FE99003A9E8F /* ViewModel */,
+				119249F12022FE92003A9E8F /* Model */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		119249EF2022FE81003A9E8F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				119249F32023001F003A9E8F /* JKAboutTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		119249F02022FE8C003A9E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				119249F520230041003A9E8F /* JKAboutCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		119249F12022FE92003A9E8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				119249F920230082003A9E8F /* JKAboutModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		119249F22022FE99003A9E8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				119249F720230066003A9E8F /* JKAboutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		11EF9749201B133300AF9283 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +220,7 @@
 				11EF9785201B146C00AF9283 /* ViewController */,
 				11EF9784201B146400AF9283 /* View */,
 				11EF97BB20214B2A00AF9283 /* Model */,
+				119249EE2022FE76003A9E8F /* About */,
 				11EF9783201B143D00AF9283 /* Util */,
 				11EF97A8201EC86700AF9283 /* image */,
 				11EF9757201B133300AF9283 /* ViewController.swift */,
@@ -445,9 +497,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JokeTests/Pods-JokeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -561,12 +620,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Joke/Pods-Joke-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
@@ -574,12 +637,16 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
@@ -612,10 +679,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11EF9799201C598300AF9283 /* NSStringExt.swift in Sources */,
+				119249F42023001F003A9E8F /* JKAboutTableViewController.swift in Sources */,
 				11EF9797201C58F100AF9283 /* NSDictionaryExt.swift in Sources */,
 				11EF979F201C59BD00AF9283 /* JKHttpUtil.swift in Sources */,
 				11EF9789201B15F700AF9283 /* JKMainViewController.swift in Sources */,
 				11EF97A7201DB06500AF9283 /* JKImageViewController.swift in Sources */,
+				119249FA20230082003A9E8F /* JKAboutModel.swift in Sources */,
 				11EF97A1201DA68100AF9283 /* JKRefreshView.swift in Sources */,
 				112175962021A18C005D139B /* R.generated.swift in Sources */,
 				11EF97AF201EC9AD00AF9283 /* JKCommentCell.swift in Sources */,
@@ -626,9 +695,11 @@
 				11EF9756201B133300AF9283 /* AppDelegate.swift in Sources */,
 				11EF978B201B24AD00AF9283 /* JKJokeTableViewController.swift in Sources */,
 				11EF9792201B542C00AF9283 /* JKJokeCell.swift in Sources */,
+				119249F620230041003A9E8F /* JKAboutCell.swift in Sources */,
 				11EF97A5201DACE300AF9283 /* JKImageZoomingView.swift in Sources */,
 				11EF97B2201ECECF00AF9283 /* JKCommentViewController.swift in Sources */,
 				11EF97BD20214BB200AF9283 /* JKResult.swift in Sources */,
+				119249F820230066003A9E8F /* JKAboutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

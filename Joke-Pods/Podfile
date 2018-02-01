@@ -15,13 +15,23 @@ target 'Joke' do
     pod 'SnapKit'                   # 代码布局
     pod 'R.swift'                   # 优雅使用资源文件
     
-    target 'JokeTests' do
-        inherit! :search_paths
-        # Pods for testing
-    end
+    pod 'RxSwift', '~> 4.0'
+    pod 'RxCocoa', '~> 4.0'
+    pod 'RxDataSources'
     
-    target 'JokeUITests' do
-        inherit! :search_paths
-        # Pods for testing
-    end
+end
+
+target 'JokeTests' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    # Pods for testing
+    # RxTests and RxBlocking make the most sense in the context of unit/integration tests
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
+end
+
+target 'JokeUITests' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    # Pods for testing
 end

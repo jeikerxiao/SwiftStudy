@@ -19,7 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         // 设置日志
+        setupLog()
+        // 设置窗体
+//        setupMian()
+        setupAbout()
+        
+        return true
+    }
+    
+    func setupLog() {
         log.setup(level: .debug,
                   showLogIdentifier: false,
                   showFunctionName: false,
@@ -37,8 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         log.warning("日志启动成功！")
         log.error("日志启动成功！")
         log.severe("日志启动成功！")
-        
-        // 设置窗体
+    }
+    
+    func setupMian() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         // 初始化主视图
         let mainViewController = JKMainViewController(nibName:nil, bundle:nil)
@@ -48,8 +59,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = navigationViewController;
         // 显示
         self.window!.makeKeyAndVisible()
-        
-        return true
+    }
+    
+    func setupAbout() {
+        let nav = UINavigationController(rootViewController: JKAboutTableViewController())
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
