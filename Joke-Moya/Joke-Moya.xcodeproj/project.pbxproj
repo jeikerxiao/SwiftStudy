@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11924A15202434D4003A9E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A14202434D4003A9E8F /* AppDelegate.swift */; };
+		11924A17202434D4003A9E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A16202434D4003A9E8F /* ViewController.swift */; };
+		11924A1A202434D4003A9E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11924A18202434D4003A9E8F /* Main.storyboard */; };
+		11924A1C202434D4003A9E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11924A1B202434D4003A9E8F /* Assets.xcassets */; };
+		11924A1F202434D4003A9E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11924A1D202434D4003A9E8F /* LaunchScreen.storyboard */; };
+		11924A2A202434D4003A9E8F /* Joke_MoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A29202434D4003A9E8F /* Joke_MoyaTests.swift */; };
+		11924A35202434D4003A9E8F /* Joke_MoyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A34202434D4003A9E8F /* Joke_MoyaUITests.swift */; };
+		11924A4B202437C6003A9E8F /* CodeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A4A202437C6003A9E8F /* CodeAPI.swift */; };
+		11924A4D202439B0003A9E8F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A4C202439B0003A9E8F /* Post.swift */; };
+		11924A4F20243A44003A9E8F /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A4E20243A44003A9E8F /* PostViewModel.swift */; };
+		11924A5120243C8B003A9E8F /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A5020243C8B003A9E8F /* Observable+ObjectMapper.swift */; };
+		11924A53202443D5003A9E8F /* Observable+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A52202443D5003A9E8F /* Observable+HandyJSON.swift */; };
+		11924A562024464F003A9E8F /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A542024464E003A9E8F /* GitHubAPI.swift */; };
+		11924A572024464F003A9E8F /* GankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A552024464E003A9E8F /* GankAPI.swift */; };
+		5ABBE397CF8C9B52D33070F5 /* Pods_Joke_MoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E635AEE6C65E433F5131789 /* Pods_Joke_MoyaUITests.framework */; };
+		BABFBDFA265AB2B90EA020B6 /* Pods_Joke_MoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B30F17ACFCC5F4E026614D2 /* Pods_Joke_MoyaTests.framework */; };
+		BE5C37784F7A68CF58C5DA23 /* Pods_Joke_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E78E3AAA7D92985563931F /* Pods_Joke_Moya.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11924A26202434D4003A9E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11924A09202434D4003A9E8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11924A10202434D4003A9E8F;
+			remoteInfo = "Joke-Moya";
+		};
+		11924A31202434D4003A9E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11924A09202434D4003A9E8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11924A10202434D4003A9E8F;
+			remoteInfo = "Joke-Moya";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10E78E3AAA7D92985563931F /* Pods_Joke_Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11924A11202434D4003A9E8F /* Joke-Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke-Moya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11924A14202434D4003A9E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11924A16202434D4003A9E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11924A19202434D4003A9E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11924A1B202434D4003A9E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11924A1E202434D4003A9E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11924A20202434D4003A9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11924A25202434D4003A9E8F /* Joke-MoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Joke-MoyaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11924A29202434D4003A9E8F /* Joke_MoyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke_MoyaTests.swift; sourceTree = "<group>"; };
+		11924A2B202434D4003A9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11924A30202434D4003A9E8F /* Joke-MoyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Joke-MoyaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11924A34202434D4003A9E8F /* Joke_MoyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke_MoyaUITests.swift; sourceTree = "<group>"; };
+		11924A36202434D4003A9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11924A4A202437C6003A9E8F /* CodeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAPI.swift; sourceTree = "<group>"; };
+		11924A4C202439B0003A9E8F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		11924A4E20243A44003A9E8F /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		11924A5020243C8B003A9E8F /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
+		11924A52202443D5003A9E8F /* Observable+HandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+HandyJSON.swift"; sourceTree = "<group>"; };
+		11924A542024464E003A9E8F /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		11924A552024464E003A9E8F /* GankAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankAPI.swift; sourceTree = "<group>"; };
+		6B30F17ACFCC5F4E026614D2 /* Pods_Joke_MoyaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_MoyaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7518236DA08399F54C14B8C4 /* Pods-Joke-Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-Moya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-Moya/Pods-Joke-Moya.debug.xcconfig"; sourceTree = "<group>"; };
+		9E635AEE6C65E433F5131789 /* Pods_Joke_MoyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_MoyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57DD6CBB92AA9A64CCB66CF /* Pods-Joke-MoyaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-MoyaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-MoyaUITests/Pods-Joke-MoyaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC8C339D15FFD246338A2AA4 /* Pods-Joke-Moya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-Moya.release.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-Moya/Pods-Joke-Moya.release.xcconfig"; sourceTree = "<group>"; };
+		D7970C2215898F4DBDA75553 /* Pods-Joke-MoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-MoyaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-MoyaUITests/Pods-Joke-MoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3E8EFF80E346F028F84B95A /* Pods-Joke-MoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-MoyaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-MoyaTests/Pods-Joke-MoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E7D6AFF897B75620D8ED11 /* Pods-Joke-MoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-MoyaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-MoyaTests/Pods-Joke-MoyaTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11924A0E202434D4003A9E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C37784F7A68CF58C5DA23 /* Pods_Joke_Moya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11924A22202434D4003A9E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABFBDFA265AB2B90EA020B6 /* Pods_Joke_MoyaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11924A2D202434D4003A9E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ABBE397CF8C9B52D33070F5 /* Pods_Joke_MoyaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11924A08202434D4003A9E8F = {
+			isa = PBXGroup;
+			children = (
+				11924A13202434D4003A9E8F /* Joke-Moya */,
+				11924A28202434D4003A9E8F /* Joke-MoyaTests */,
+				11924A33202434D4003A9E8F /* Joke-MoyaUITests */,
+				11924A12202434D4003A9E8F /* Products */,
+				C2103BB3A79C8E8866AD70A9 /* Pods */,
+				51F41DEDFB1CAD2F06024A5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11924A12202434D4003A9E8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11924A11202434D4003A9E8F /* Joke-Moya.app */,
+				11924A25202434D4003A9E8F /* Joke-MoyaTests.xctest */,
+				11924A30202434D4003A9E8F /* Joke-MoyaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11924A13202434D4003A9E8F /* Joke-Moya */ = {
+			isa = PBXGroup;
+			children = (
+				11924A20202434D4003A9E8F /* Info.plist */,
+				11924A422024350D003A9E8F /* Home */,
+				11924A4320243522003A9E8F /* Util */,
+				11924A482024355E003A9E8F /* Other */,
+			);
+			path = "Joke-Moya";
+			sourceTree = "<group>";
+		};
+		11924A28202434D4003A9E8F /* Joke-MoyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				11924A29202434D4003A9E8F /* Joke_MoyaTests.swift */,
+				11924A2B202434D4003A9E8F /* Info.plist */,
+			);
+			path = "Joke-MoyaTests";
+			sourceTree = "<group>";
+		};
+		11924A33202434D4003A9E8F /* Joke-MoyaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11924A34202434D4003A9E8F /* Joke_MoyaUITests.swift */,
+				11924A36202434D4003A9E8F /* Info.plist */,
+			);
+			path = "Joke-MoyaUITests";
+			sourceTree = "<group>";
+		};
+		11924A422024350D003A9E8F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11924A442024352B003A9E8F /* Controller */,
+				11924A462024353C003A9E8F /* View */,
+				11924A4520243534003A9E8F /* ViewModel */,
+				11924A4720243541003A9E8F /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11924A4320243522003A9E8F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				11924A49202437AA003A9E8F /* Network */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		11924A442024352B003A9E8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11924A16202434D4003A9E8F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11924A4520243534003A9E8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11924A4E20243A44003A9E8F /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11924A462024353C003A9E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11924A4720243541003A9E8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11924A4C202439B0003A9E8F /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11924A482024355E003A9E8F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				11924A14202434D4003A9E8F /* AppDelegate.swift */,
+				11924A18202434D4003A9E8F /* Main.storyboard */,
+				11924A1B202434D4003A9E8F /* Assets.xcassets */,
+				11924A1D202434D4003A9E8F /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		11924A49202437AA003A9E8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				11924A552024464E003A9E8F /* GankAPI.swift */,
+				11924A542024464E003A9E8F /* GitHubAPI.swift */,
+				11924A4A202437C6003A9E8F /* CodeAPI.swift */,
+				11924A5020243C8B003A9E8F /* Observable+ObjectMapper.swift */,
+				11924A52202443D5003A9E8F /* Observable+HandyJSON.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		51F41DEDFB1CAD2F06024A5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10E78E3AAA7D92985563931F /* Pods_Joke_Moya.framework */,
+				6B30F17ACFCC5F4E026614D2 /* Pods_Joke_MoyaTests.framework */,
+				9E635AEE6C65E433F5131789 /* Pods_Joke_MoyaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2103BB3A79C8E8866AD70A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7518236DA08399F54C14B8C4 /* Pods-Joke-Moya.debug.xcconfig */,
+				AC8C339D15FFD246338A2AA4 /* Pods-Joke-Moya.release.xcconfig */,
+				E3E8EFF80E346F028F84B95A /* Pods-Joke-MoyaTests.debug.xcconfig */,
+				F0E7D6AFF897B75620D8ED11 /* Pods-Joke-MoyaTests.release.xcconfig */,
+				D7970C2215898F4DBDA75553 /* Pods-Joke-MoyaUITests.debug.xcconfig */,
+				A57DD6CBB92AA9A64CCB66CF /* Pods-Joke-MoyaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11924A10202434D4003A9E8F /* Joke-Moya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11924A39202434D4003A9E8F /* Build configuration list for PBXNativeTarget "Joke-Moya" */;
+			buildPhases = (
+				2899EE6794E4C7136543380E /* [CP] Check Pods Manifest.lock */,
+				11924A0D202434D4003A9E8F /* Sources */,
+				11924A0E202434D4003A9E8F /* Frameworks */,
+				11924A0F202434D4003A9E8F /* Resources */,
+				D98B43D36B375A6CF6456EAE /* [CP] Embed Pods Frameworks */,
+				171F4AB1A9182F1B9A3AF090 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Joke-Moya";
+			productName = "Joke-Moya";
+			productReference = 11924A11202434D4003A9E8F /* Joke-Moya.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11924A24202434D4003A9E8F /* Joke-MoyaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11924A3C202434D4003A9E8F /* Build configuration list for PBXNativeTarget "Joke-MoyaTests" */;
+			buildPhases = (
+				E3CADABBBAE9ABEE549C513E /* [CP] Check Pods Manifest.lock */,
+				11924A21202434D4003A9E8F /* Sources */,
+				11924A22202434D4003A9E8F /* Frameworks */,
+				11924A23202434D4003A9E8F /* Resources */,
+				7F567DBD7891EA1C67100A05 /* [CP] Embed Pods Frameworks */,
+				58E81BA32242E635F3E649CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11924A27202434D4003A9E8F /* PBXTargetDependency */,
+			);
+			name = "Joke-MoyaTests";
+			productName = "Joke-MoyaTests";
+			productReference = 11924A25202434D4003A9E8F /* Joke-MoyaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11924A2F202434D4003A9E8F /* Joke-MoyaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11924A3F202434D4003A9E8F /* Build configuration list for PBXNativeTarget "Joke-MoyaUITests" */;
+			buildPhases = (
+				ADE6997CB804B516E01F0F30 /* [CP] Check Pods Manifest.lock */,
+				11924A2C202434D4003A9E8F /* Sources */,
+				11924A2D202434D4003A9E8F /* Frameworks */,
+				11924A2E202434D4003A9E8F /* Resources */,
+				14F8C1C915D822CBCEE03E38 /* [CP] Embed Pods Frameworks */,
+				EBCC7388BEAC25EA3A5D998F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11924A32202434D4003A9E8F /* PBXTargetDependency */,
+			);
+			name = "Joke-MoyaUITests";
+			productName = "Joke-MoyaUITests";
+			productReference = 11924A30202434D4003A9E8F /* Joke-MoyaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11924A09202434D4003A9E8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jeikerxiao;
+				TargetAttributes = {
+					11924A10202434D4003A9E8F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					11924A24202434D4003A9E8F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11924A10202434D4003A9E8F;
+					};
+					11924A2F202434D4003A9E8F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11924A10202434D4003A9E8F;
+					};
+				};
+			};
+			buildConfigurationList = 11924A0C202434D4003A9E8F /* Build configuration list for PBXProject "Joke-Moya" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11924A08202434D4003A9E8F;
+			productRefGroup = 11924A12202434D4003A9E8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11924A10202434D4003A9E8F /* Joke-Moya */,
+				11924A24202434D4003A9E8F /* Joke-MoyaTests */,
+				11924A2F202434D4003A9E8F /* Joke-MoyaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11924A0F202434D4003A9E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11924A1F202434D4003A9E8F /* LaunchScreen.storyboard in Resources */,
+				11924A1C202434D4003A9E8F /* Assets.xcassets in Resources */,
+				11924A1A202434D4003A9E8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11924A23202434D4003A9E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11924A2E202434D4003A9E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F8C1C915D822CBCEE03E38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Joke-MoyaUITests/Pods-Joke-MoyaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		171F4AB1A9182F1B9A3AF090 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Joke-Moya/Pods-Joke-Moya-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2899EE6794E4C7136543380E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joke-Moya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E81BA32242E635F3E649CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Joke-MoyaTests/Pods-Joke-MoyaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F567DBD7891EA1C67100A05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Joke-MoyaTests/Pods-Joke-MoyaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Joke-MoyaTests/Pods-Joke-MoyaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE6997CB804B516E01F0F30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joke-MoyaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98B43D36B375A6CF6456EAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Joke-Moya/Pods-Joke-Moya-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Joke-Moya/Pods-Joke-Moya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CADABBBAE9ABEE549C513E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joke-MoyaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBCC7388BEAC25EA3A5D998F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Joke-MoyaUITests/Pods-Joke-MoyaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11924A0D202434D4003A9E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11924A5120243C8B003A9E8F /* Observable+ObjectMapper.swift in Sources */,
+				11924A4F20243A44003A9E8F /* PostViewModel.swift in Sources */,
+				11924A53202443D5003A9E8F /* Observable+HandyJSON.swift in Sources */,
+				11924A17202434D4003A9E8F /* ViewController.swift in Sources */,
+				11924A15202434D4003A9E8F /* AppDelegate.swift in Sources */,
+				11924A4B202437C6003A9E8F /* CodeAPI.swift in Sources */,
+				11924A572024464F003A9E8F /* GankAPI.swift in Sources */,
+				11924A4D202439B0003A9E8F /* Post.swift in Sources */,
+				11924A562024464F003A9E8F /* GitHubAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11924A21202434D4003A9E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11924A2A202434D4003A9E8F /* Joke_MoyaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11924A2C202434D4003A9E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11924A35202434D4003A9E8F /* Joke_MoyaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11924A27202434D4003A9E8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11924A10202434D4003A9E8F /* Joke-Moya */;
+			targetProxy = 11924A26202434D4003A9E8F /* PBXContainerItemProxy */;
+		};
+		11924A32202434D4003A9E8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11924A10202434D4003A9E8F /* Joke-Moya */;
+			targetProxy = 11924A31202434D4003A9E8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11924A18202434D4003A9E8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11924A19202434D4003A9E8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11924A1D202434D4003A9E8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11924A1E202434D4003A9E8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11924A37202434D4003A9E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11924A38202434D4003A9E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11924A3A202434D4003A9E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7518236DA08399F54C14B8C4 /* Pods-Joke-Moya.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
+				INFOPLIST_FILE = "Joke-Moya/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeiker.Joke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11924A3B202434D4003A9E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC8C339D15FFD246338A2AA4 /* Pods-Joke-Moya.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
+				INFOPLIST_FILE = "Joke-Moya/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeiker.Joke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		11924A3D202434D4003A9E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E8EFF80E346F028F84B95A /* Pods-Joke-MoyaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
+				INFOPLIST_FILE = "Joke-MoyaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeiker.Joke-MoyaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joke-Moya.app/Joke-Moya";
+			};
+			name = Debug;
+		};
+		11924A3E202434D4003A9E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E7D6AFF897B75620D8ED11 /* Pods-Joke-MoyaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
+				INFOPLIST_FILE = "Joke-MoyaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeiker.Joke-MoyaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joke-Moya.app/Joke-Moya";
+			};
+			name = Release;
+		};
+		11924A40202434D4003A9E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7970C2215898F4DBDA75553 /* Pods-Joke-MoyaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
+				INFOPLIST_FILE = "Joke-MoyaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeiker.Joke-MoyaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Joke-Moya";
+			};
+			name = Debug;
+		};
+		11924A41202434D4003A9E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57DD6CBB92AA9A64CCB66CF /* Pods-Joke-MoyaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
+				INFOPLIST_FILE = "Joke-MoyaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeiker.Joke-MoyaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Joke-Moya";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11924A0C202434D4003A9E8F /* Build configuration list for PBXProject "Joke-Moya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11924A37202434D4003A9E8F /* Debug */,
+				11924A38202434D4003A9E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11924A39202434D4003A9E8F /* Build configuration list for PBXNativeTarget "Joke-Moya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11924A3A202434D4003A9E8F /* Debug */,
+				11924A3B202434D4003A9E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11924A3C202434D4003A9E8F /* Build configuration list for PBXNativeTarget "Joke-MoyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11924A3D202434D4003A9E8F /* Debug */,
+				11924A3E202434D4003A9E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11924A3F202434D4003A9E8F /* Build configuration list for PBXNativeTarget "Joke-MoyaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11924A40202434D4003A9E8F /* Debug */,
+				11924A41202434D4003A9E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11924A09202434D4003A9E8F /* Project object */;
+}

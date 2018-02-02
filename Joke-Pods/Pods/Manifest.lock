@@ -8,9 +8,12 @@ PODS:
   - Moya/Core (10.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - NSObject+Rx (4.2.0):
+    - RxSwift (~> 4.0)
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (3.1.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -28,24 +31,28 @@ PODS:
     - RxSwift (~> 4.0)
   - SnapKit (4.0.0)
   - SwiftyJSON (4.0.0)
+  - Then (2.3.0)
   - XCGLogger (6.0.2):
     - XCGLogger/Core (= 6.0.2)
   - XCGLogger/Core (6.0.2):
     - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.6.0)
   - HandyJSON (= 4.0.0-beta.1)
-  - Kingfisher
+  - Kingfisher (~> 4.6.1)
   - Moya (~> 10.0)
-  - R.swift
+  - NSObject+Rx (~> 4.2.0)
+  - ObjectMapper
+  - R.swift (~> 4.0.0)
   - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
-  - RxDataSources
+  - RxDataSources (~> 3.0.2)
   - RxSwift (~> 4.0)
   - RxTest (~> 4.0)
-  - SnapKit
-  - SwiftyJSON
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON (~> 4.0.0)
+  - Then (~> 2.3.0)
   - XCGLogger (~> 6.0.2)
 
 SPEC CHECKSUMS:
@@ -54,7 +61,9 @@ SPEC CHECKSUMS:
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
+  NSObject+Rx: cbbc05e3cb3ad446cdbced3e00e39c9efaf02925
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -65,8 +74,9 @@ SPEC CHECKSUMS:
   RxTest: cc62dd7e02049f21dfc910d0c4ca8fee1ecd4f74
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
   XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
 
-PODFILE CHECKSUM: 33e3856e462836ea92e198ce8d65e0baae66c2c3
+PODFILE CHECKSUM: 860faeadf73cd64d7b16fa0846e0c8a05413eb9e
 
 COCOAPODS: 1.3.1

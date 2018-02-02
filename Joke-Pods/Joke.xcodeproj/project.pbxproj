@@ -12,6 +12,10 @@
 		119249F620230041003A9E8F /* JKAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F520230041003A9E8F /* JKAboutCell.swift */; };
 		119249F820230066003A9E8F /* JKAboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F720230066003A9E8F /* JKAboutViewModel.swift */; };
 		119249FA20230082003A9E8F /* JKAboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249F920230082003A9E8F /* JKAboutModel.swift */; };
+		119249FD2023F9E9003A9E8F /* GankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249FC2023F9E9003A9E8F /* GankAPI.swift */; };
+		119249FF2023FEDE003A9E8F /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119249FE2023FEDE003A9E8F /* GitHubAPI.swift */; };
+		11924A0120240079003A9E8F /* GankAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A0020240079003A9E8F /* GankAPITests.swift */; };
+		11924A0320240CEE003A9E8F /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A0220240CEE003A9E8F /* Response+ObjectMapper.swift */; };
 		11EF9756201B133300AF9283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9755201B133300AF9283 /* AppDelegate.swift */; };
 		11EF9758201B133300AF9283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF9757201B133300AF9283 /* ViewController.swift */; };
 		11EF975B201B133300AF9283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EF9759201B133300AF9283 /* Main.storyboard */; };
@@ -71,6 +75,10 @@
 		119249F520230041003A9E8F /* JKAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutCell.swift; sourceTree = "<group>"; };
 		119249F720230066003A9E8F /* JKAboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutViewModel.swift; sourceTree = "<group>"; };
 		119249F920230082003A9E8F /* JKAboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAboutModel.swift; sourceTree = "<group>"; };
+		119249FC2023F9E9003A9E8F /* GankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GankAPI.swift; sourceTree = "<group>"; };
+		119249FE2023FEDE003A9E8F /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		11924A0020240079003A9E8F /* GankAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GankAPITests.swift; sourceTree = "<group>"; };
+		11924A0220240CEE003A9E8F /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
 		11EF9752201B133300AF9283 /* Joke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF9755201B133300AF9283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EF9757201B133300AF9283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +158,7 @@
 		119249EE2022FE76003A9E8F /* About */ = {
 			isa = PBXGroup;
 			children = (
-				119249EF2022FE81003A9E8F /* ViewController */,
+				119249EF2022FE81003A9E8F /* Controller */,
 				119249F02022FE8C003A9E8F /* View */,
 				119249F22022FE99003A9E8F /* ViewModel */,
 				119249F12022FE92003A9E8F /* Model */,
@@ -158,12 +166,12 @@
 			path = About;
 			sourceTree = "<group>";
 		};
-		119249EF2022FE81003A9E8F /* ViewController */ = {
+		119249EF2022FE81003A9E8F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				119249F32023001F003A9E8F /* JKAboutTableViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		119249F02022FE8C003A9E8F /* View */ = {
@@ -188,6 +196,16 @@
 				119249F720230066003A9E8F /* JKAboutViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		119249FB2023F9C4003A9E8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				119249FC2023F9E9003A9E8F /* GankAPI.swift */,
+				119249FE2023FEDE003A9E8F /* GitHubAPI.swift */,
+				11924A0220240CEE003A9E8F /* Response+ObjectMapper.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		11EF9749201B133300AF9283 = {
@@ -239,6 +257,7 @@
 				11EF97B420203D5500AF9283 /* AlamofireTests.swift */,
 				11EF97B62020480E00AF9283 /* HandyJsonTests.swift */,
 				11EF97B82020514C00AF9283 /* KingfisherTests.swift */,
+				11924A0020240079003A9E8F /* GankAPITests.swift */,
 				11EF976C201B133300AF9283 /* Info.plist */,
 			);
 			path = JokeTests;
@@ -256,6 +275,7 @@
 		11EF9783201B143D00AF9283 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				119249FB2023F9C4003A9E8F /* Network */,
 				11EF9794201C58CF00AF9283 /* FileUtil.swift */,
 				11EF9796201C58F100AF9283 /* NSDictionaryExt.swift */,
 				11EF9798201C598300AF9283 /* NSStringExt.swift */,
@@ -498,13 +518,45 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JokeTests/Pods-JokeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
@@ -624,6 +676,7 @@
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -632,6 +685,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -641,6 +695,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -649,6 +704,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,7 +741,9 @@
 				11EF9789201B15F700AF9283 /* JKMainViewController.swift in Sources */,
 				11EF97A7201DB06500AF9283 /* JKImageViewController.swift in Sources */,
 				119249FA20230082003A9E8F /* JKAboutModel.swift in Sources */,
+				119249FF2023FEDE003A9E8F /* GitHubAPI.swift in Sources */,
 				11EF97A1201DA68100AF9283 /* JKRefreshView.swift in Sources */,
+				119249FD2023F9E9003A9E8F /* GankAPI.swift in Sources */,
 				112175962021A18C005D139B /* R.generated.swift in Sources */,
 				11EF97AF201EC9AD00AF9283 /* JKCommentCell.swift in Sources */,
 				11EF9795201C58CF00AF9283 /* FileUtil.swift in Sources */,
@@ -699,6 +757,7 @@
 				11EF97A5201DACE300AF9283 /* JKImageZoomingView.swift in Sources */,
 				11EF97B2201ECECF00AF9283 /* JKCommentViewController.swift in Sources */,
 				11EF97BD20214BB200AF9283 /* JKResult.swift in Sources */,
+				11924A0320240CEE003A9E8F /* Response+ObjectMapper.swift in Sources */,
 				119249F820230066003A9E8F /* JKAboutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +768,7 @@
 			files = (
 				11EF97B520203D5500AF9283 /* AlamofireTests.swift in Sources */,
 				11EF97B92020514C00AF9283 /* KingfisherTests.swift in Sources */,
+				11924A0120240079003A9E8F /* GankAPITests.swift in Sources */,
 				11EF97B72020480E00AF9283 /* HandyJsonTests.swift in Sources */,
 				11EF976B201B133300AF9283 /* JokeTests.swift in Sources */,
 			);

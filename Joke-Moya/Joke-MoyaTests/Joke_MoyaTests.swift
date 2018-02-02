@@ -1,15 +1,15 @@
 //
-//  KingfisherTests.swift
-//  JokeTests
+//  Joke_MoyaTests.swift
+//  Joke-MoyaTests
 //
-//  Created by xiao on 2018/1/30.
+//  Created by xiao on 2018/2/2.
 //  Copyright © 2018年 jeikerxiao. All rights reserved.
 //
 
 import XCTest
-import Kingfisher
+@testable import Joke_Moya
 
-class KingfisherTests: XCTestCase {
+class Joke_MoyaTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -31,11 +31,6 @@ class KingfisherTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
-    }
-    
-    func testImage() {
-//        let url = URL(string: "url_of_your_image")
-//        imageView.kf.setImage(with: url)
     }
     
 }

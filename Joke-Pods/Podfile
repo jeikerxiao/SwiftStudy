@@ -6,18 +6,20 @@ target 'Joke' do
   	use_frameworks!
 
   	# Pods for Joke
-    pod 'Alamofire'                 # 网络请求框架
+    pod 'Alamofire', '~> 4.6.0'     # 网络请求框架
     pod 'Moya', '~> 10.0'           # 网络请求框架
-    pod 'Kingfisher'                # 图片加载
-    pod 'SwiftyJSON'                # Json解析
+    pod 'Kingfisher', '~>4.6.1'     # 图片加载
+    pod 'SwiftyJSON', '~>4.0.0'     # Json解析
     pod 'HandyJSON', '4.0.0-beta.1' # Json <-> Model
     pod 'XCGLogger', '~> 6.0.2'     # 日志框架
-    pod 'SnapKit'                   # 代码布局
-    pod 'R.swift'                   # 优雅使用资源文件
+    pod 'SnapKit', '~> 4.0.0'       # 代码布局
+    pod 'R.swift', '~> 4.0.0'       # 优雅使用资源文件
+    pod 'Then', '~>2.3.0'
     
     pod 'RxSwift', '~> 4.0'
     pod 'RxCocoa', '~> 4.0'
-    pod 'RxDataSources'
+    pod 'RxDataSources', '~> 3.0.2'
+    pod 'NSObject+Rx', '~> 4.2.0'
     
 end
 
@@ -28,6 +30,23 @@ target 'JokeTests' do
     # RxTests and RxBlocking make the most sense in the context of unit/integration tests
     pod 'RxBlocking', '~> 4.0'
     pod 'RxTest',     '~> 4.0'
+    
+    pod 'Alamofire', '~> 4.6.0'     # 网络请求框架
+    pod 'Moya', '~> 10.0'           # 网络请求框架
+    pod 'Kingfisher', '~>4.6.1'     # 图片加载
+    pod 'SwiftyJSON', '~>4.0.0'     # Json解析
+    pod 'ObjectMapper'              # Json解析
+    pod 'HandyJSON', '4.0.0-beta.1' # Json <-> Model
+    pod 'XCGLogger', '~> 6.0.2'     # 日志框架
+    pod 'SnapKit', '~> 4.0.0'       # 代码布局
+    pod 'R.swift', '~> 4.0.0'       # 优雅使用资源文件
+    pod 'Then', '~>2.3.0'
+    
+    pod 'RxSwift', '~> 4.0'
+    pod 'RxCocoa', '~> 4.0'
+    pod 'RxDataSources', '~> 3.0.2'
+    pod 'NSObject+Rx', '~> 4.2.0'
+
 end
 
 target 'JokeUITests' do

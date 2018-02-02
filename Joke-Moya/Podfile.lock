@@ -8,6 +8,9 @@ PODS:
   - Moya/Core (10.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - Moya/RxSwift (10.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
   - NSObject+Rx (4.2.0):
     - RxSwift (~> 4.0)
   - ObjcExceptionBridging (1.0.1):
@@ -42,8 +45,9 @@ DEPENDENCIES:
   - HandyJSON (= 4.0.0-beta.1)
   - Kingfisher (~> 4.6.1)
   - Moya (~> 10.0)
+  - Moya/RxSwift
   - NSObject+Rx (~> 4.2.0)
-  - ObjectMapper
+  - ObjectMapper (~> 3.1.0)
   - R.swift (~> 4.0.0)
   - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
@@ -77,6 +81,6 @@ SPEC CHECKSUMS:
   Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
   XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
 
-PODFILE CHECKSUM: 860faeadf73cd64d7b16fa0846e0c8a05413eb9e
+PODFILE CHECKSUM: 8ec707b5c7ccc7dba4667df14778e7a787372e28
 
 COCOAPODS: 1.3.1
