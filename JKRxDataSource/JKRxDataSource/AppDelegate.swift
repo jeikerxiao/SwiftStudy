@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Joke-Moya
+//  JKRxDataSource
 //
-//  Created by xiao on 2018/2/2.
+//  Created by xiao on 2018/2/5.
 //  Copyright © 2018年 jeikerxiao. All rights reserved.
 //
 
@@ -16,20 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // 初始化
-        JKProgressHUD.initJKProgressHUD()
-        
-        setupGirlVC()
-        
         return true
-    }
-    
-    func setupGirlVC() {
-        let nav = UINavigationController(rootViewController: JKGirlViewController())
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = nav
-        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

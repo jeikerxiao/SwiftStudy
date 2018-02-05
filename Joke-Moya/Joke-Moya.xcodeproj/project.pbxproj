@@ -21,6 +21,14 @@
 		11924A53202443D5003A9E8F /* Observable+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A52202443D5003A9E8F /* Observable+HandyJSON.swift */; };
 		11924A562024464F003A9E8F /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A542024464E003A9E8F /* GitHubAPI.swift */; };
 		11924A572024464F003A9E8F /* GankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A552024464E003A9E8F /* GankAPI.swift */; };
+		11924A5A20244F19003A9E8F /* JKProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A5920244F19003A9E8F /* JKProgressHUD.swift */; };
+		11924A5D2024511E003A9E8F /* JKViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A5C2024511E003A9E8F /* JKViewModelType.swift */; };
+		11924A64202451A7003A9E8F /* JKGirlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A63202451A7003A9E8F /* JKGirlViewController.swift */; };
+		11924A6620245278003A9E8F /* JKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A6520245278003A9E8F /* JKModel.swift */; };
+		11924A69202456E8003A9E8F /* JKViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A67202456E8003A9E8F /* JKViewCell.swift */; };
+		11924A6A202456E8003A9E8F /* JKViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11924A68202456E8003A9E8F /* JKViewCell.xib */; };
+		11924A6C20245739003A9E8F /* JKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A6B20245739003A9E8F /* JKViewModel.swift */; };
+		11924A7020245901003A9E8F /* JKSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A6F20245901003A9E8F /* JKSection.swift */; };
 		5ABBE397CF8C9B52D33070F5 /* Pods_Joke_MoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E635AEE6C65E433F5131789 /* Pods_Joke_MoyaUITests.framework */; };
 		BABFBDFA265AB2B90EA020B6 /* Pods_Joke_MoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B30F17ACFCC5F4E026614D2 /* Pods_Joke_MoyaTests.framework */; };
 		BE5C37784F7A68CF58C5DA23 /* Pods_Joke_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E78E3AAA7D92985563931F /* Pods_Joke_Moya.framework */; };
@@ -65,6 +73,14 @@
 		11924A52202443D5003A9E8F /* Observable+HandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+HandyJSON.swift"; sourceTree = "<group>"; };
 		11924A542024464E003A9E8F /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		11924A552024464E003A9E8F /* GankAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankAPI.swift; sourceTree = "<group>"; };
+		11924A5920244F19003A9E8F /* JKProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKProgressHUD.swift; sourceTree = "<group>"; };
+		11924A5C2024511E003A9E8F /* JKViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKViewModelType.swift; sourceTree = "<group>"; };
+		11924A63202451A7003A9E8F /* JKGirlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKGirlViewController.swift; sourceTree = "<group>"; };
+		11924A6520245278003A9E8F /* JKModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKModel.swift; sourceTree = "<group>"; };
+		11924A67202456E8003A9E8F /* JKViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKViewCell.swift; sourceTree = "<group>"; };
+		11924A68202456E8003A9E8F /* JKViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKViewCell.xib; sourceTree = "<group>"; };
+		11924A6B20245739003A9E8F /* JKViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKViewModel.swift; sourceTree = "<group>"; };
+		11924A6F20245901003A9E8F /* JKSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKSection.swift; sourceTree = "<group>"; };
 		6B30F17ACFCC5F4E026614D2 /* Pods_Joke_MoyaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_MoyaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7518236DA08399F54C14B8C4 /* Pods-Joke-Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joke-Moya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joke-Moya/Pods-Joke-Moya.debug.xcconfig"; sourceTree = "<group>"; };
 		9E635AEE6C65E433F5131789 /* Pods_Joke_MoyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joke_MoyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				11924A20202434D4003A9E8F /* Info.plist */,
+				11924A5B202450FD003A9E8F /* Protocol */,
 				11924A422024350D003A9E8F /* Home */,
+				11924A5E20245152003A9E8F /* Girl */,
 				11924A4320243522003A9E8F /* Util */,
 				11924A482024355E003A9E8F /* Other */,
 			);
@@ -168,6 +186,7 @@
 		11924A4320243522003A9E8F /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				11924A5820244EF4003A9E8F /* ProgressHUD */,
 				11924A49202437AA003A9E8F /* Network */,
 			);
 			path = Util;
@@ -225,6 +244,67 @@
 				11924A52202443D5003A9E8F /* Observable+HandyJSON.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		11924A5820244EF4003A9E8F /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				11924A5920244F19003A9E8F /* JKProgressHUD.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		11924A5B202450FD003A9E8F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				11924A5C2024511E003A9E8F /* JKViewModelType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		11924A5E20245152003A9E8F /* Girl */ = {
+			isa = PBXGroup;
+			children = (
+				11924A5F20245167003A9E8F /* Controller */,
+				11924A622024517D003A9E8F /* Model */,
+				11924A6120245174003A9E8F /* ViewModel */,
+				11924A602024516F003A9E8F /* View */,
+			);
+			path = Girl;
+			sourceTree = "<group>";
+		};
+		11924A5F20245167003A9E8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11924A63202451A7003A9E8F /* JKGirlViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11924A602024516F003A9E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11924A67202456E8003A9E8F /* JKViewCell.swift */,
+				11924A68202456E8003A9E8F /* JKViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11924A6120245174003A9E8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11924A6B20245739003A9E8F /* JKViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11924A622024517D003A9E8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11924A6520245278003A9E8F /* JKModel.swift */,
+				11924A6F20245901003A9E8F /* JKSection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		51F41DEDFB1CAD2F06024A5C /* Frameworks */ = {
@@ -369,6 +449,7 @@
 				11924A1F202434D4003A9E8F /* LaunchScreen.storyboard in Resources */,
 				11924A1C202434D4003A9E8F /* Assets.xcassets in Resources */,
 				11924A1A202434D4003A9E8F /* Main.storyboard in Resources */,
+				11924A6A202456E8003A9E8F /* JKViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,15 +584,18 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
@@ -523,15 +607,18 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
@@ -582,11 +669,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11924A6C20245739003A9E8F /* JKViewModel.swift in Sources */,
+				11924A6620245278003A9E8F /* JKModel.swift in Sources */,
+				11924A69202456E8003A9E8F /* JKViewCell.swift in Sources */,
+				11924A7020245901003A9E8F /* JKSection.swift in Sources */,
 				11924A5120243C8B003A9E8F /* Observable+ObjectMapper.swift in Sources */,
+				11924A5A20244F19003A9E8F /* JKProgressHUD.swift in Sources */,
+				11924A5D2024511E003A9E8F /* JKViewModelType.swift in Sources */,
 				11924A4F20243A44003A9E8F /* PostViewModel.swift in Sources */,
 				11924A53202443D5003A9E8F /* Observable+HandyJSON.swift in Sources */,
 				11924A17202434D4003A9E8F /* ViewController.swift in Sources */,
 				11924A15202434D4003A9E8F /* AppDelegate.swift in Sources */,
+				11924A64202451A7003A9E8F /* JKGirlViewController.swift in Sources */,
 				11924A4B202437C6003A9E8F /* CodeAPI.swift in Sources */,
 				11924A572024464F003A9E8F /* GankAPI.swift in Sources */,
 				11924A4D202439B0003A9E8F /* Post.swift in Sources */,

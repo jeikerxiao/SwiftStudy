@@ -8,6 +8,14 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
+import NSObject_Rx
+import RxDataSources
+import Then
+import SnapKit
+import Moya
+import Kingfisher
+import MJRefresh
 
 class ViewController: UIViewController {
     
@@ -21,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     func setupViewModel() {
-        
+   /*
         viewModel.getPosts()
             .subscribe(onNext: { (posts: [Post]) in
                 //do something with posts
@@ -45,6 +53,7 @@ class ViewController: UIViewController {
 
             })
             .disposed(by: disposeBag)
+ */
     }
 
 }

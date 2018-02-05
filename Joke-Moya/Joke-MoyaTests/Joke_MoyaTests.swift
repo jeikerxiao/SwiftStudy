@@ -33,4 +33,22 @@ class Joke_MoyaTests: XCTestCase {
         }
     }
     
+    func testAPI() {
+        gankApi.rx.request(.data(type: GankAPI.GankCategory.all, size: 10, index: 0))
+                            .filterSuccessfulStatusCodes()
+            .asObservable()
+//                            .mapJSON()
+            .mapArray(JKModel.self)
+            .subscribe({ [weak self] (event) in
+                switch event {
+                case let .next(modelArr):
+                    JKProgressHUD.showSuccess("加载成功")
+                case let .error(error):
+                    JKProgressHUD.showError(error.localizedDescription)
+                case .completed:
+                    JKProgressHUD.showSuccess("加载成功")
+                }
+            }).disposed(by: self.rx.disposeBag)
+    }
+    
 }

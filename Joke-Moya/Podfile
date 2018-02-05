@@ -17,10 +17,13 @@ target 'Joke-Moya' do
     pod 'SnapKit', '~> 4.0.0'       # 代码布局
     pod 'R.swift', '~> 4.0.0'       # 优雅使用资源文件
     pod 'Then', '~>2.3.0'
+    pod 'MJRefresh'
+    pod 'SVProgressHUD'
     
     pod 'RxSwift', '~> 4.0'
     pod 'RxCocoa', '~> 4.0'
     pod 'RxDataSources', '~> 3.0.2'
+    pod 'Reusable'
     pod 'NSObject+Rx', '~> 4.2.0'
 
   target 'Joke-MoyaTests' do

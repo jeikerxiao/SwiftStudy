@@ -38,19 +38,3 @@ struct Post: HandyJSON {
     
 }
 
-struct CommonResult: HandyJSON {
-    var error: Bool?
-    var results: [GankData]?
-}
-
-struct GankData: HandyJSON {
-    var createdAt: Bool?
-    var desc: String?
-    var publishedAt: String?
-    var source: String?
-    var type: String?
-    var url: String?
-    var used: Bool?
-    var who: String?
-}
-
