@@ -1,0 +1,68 @@
+PODS:
+  - CGFloatLiteral (0.4.0)
+  - Differentiator (3.0.2)
+  - ManualLayout (1.3.0)
+  - ReactorKit (1.1.0):
+    - RxSwift (>= 4.0.0)
+  - ReusableKit (2.0.1):
+    - ReusableKit/Core (= 2.0.1)
+  - ReusableKit/Core (2.0.1)
+  - RxCocoa (4.1.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxExpect (1.1.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+    - RxTest (>= 4.0.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.0)
+  - RxTest (4.1.0):
+    - RxSwift (~> 4.0)
+  - RxViewController (0.3.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - SnapKit (4.0.0)
+  - Then (2.3.0)
+  - URLNavigator (2.0.4)
+
+DEPENDENCIES:
+  - CGFloatLiteral
+  - ManualLayout
+  - ReactorKit
+  - ReusableKit
+  - RxCocoa
+  - RxDataSources
+  - RxExpect
+  - RxOptional
+  - RxSwift
+  - RxTest
+  - RxViewController
+  - SnapKit
+  - Then
+  - URLNavigator
+
+SPEC CHECKSUMS:
+  CGFloatLiteral: 2ab558b74124b584dd023a35b7e41795a61d8140
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  ManualLayout: 68ac8cfa6b5f656f7a9fadec3730208b95986880
+  ReactorKit: 26470a9eff5094fae909a30af0be7cd0cf8a182d
+  ReusableKit: 11b5bde14553a35bcf3979412dbfd1e690392f14
+  RxCocoa: cc1fec49cdc8fabe645964de7c51c099a36c2aa8
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxExpect: 618ecd84f07b644e9fb436e1a0ec39363caa22b2
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
+  RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
+  RxTest: cc62dd7e02049f21dfc910d0c4ca8fee1ecd4f74
+  RxViewController: 203510707e73dd95f147f0c387710e3ec80d2b0f
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+  URLNavigator: af5582fbbb3586c958be16835d799bfdb23a4793
+
+PODFILE CHECKSUM: abe9285ab4bd8f551fe5a97890670654409808b0
+
+COCOAPODS: 1.3.1
