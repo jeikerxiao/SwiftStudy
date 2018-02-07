@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let navigationController = self.window?.rootViewController as! UINavigationController
+        navigationController.navigationBar.prefersLargeTitles = true
+        let viewController = navigationController.viewControllers.first as! GitHubViewController
+        viewController.reactor = GitHubViewReactor()
+        
         return true
     }
 
