@@ -1,0 +1,20 @@
+PODS:
+  - ReactorKit (1.1.0):
+    - RxSwift (>= 4.0.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+
+DEPENDENCIES:
+  - ReactorKit (~> 1.1.0)
+  - RxCocoa (~> 4.0.0)
+  - RxSwift (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  ReactorKit: 26470a9eff5094fae909a30af0be7cd0cf8a182d
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+
+PODFILE CHECKSUM: e084480377f1a4665380f9daa1a7a0d9546b52ab
+
+COCOAPODS: 1.3.1

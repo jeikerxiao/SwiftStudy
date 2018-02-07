@@ -13,12 +13,17 @@ end
 target 'CounterDemoTests' do
     use_frameworks!
     pod 'ReactorKit', '~> 1.1.0'
-
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
+    pod 'RxExpect'
 end
 
 target 'CounterDemoUITests' do
     use_frameworks!
     pod 'ReactorKit', '~> 1.1.0'
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
+    pod 'RxExpect'
 
 end
 

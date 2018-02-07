@@ -63,7 +63,7 @@ final class CounterViewReactor: Reactor {
         }
     }
     
-    // 2. Mutation -> State
+    // 2. old State + Mutation -> new State
     func reduce(state: State, mutation: Mutation) -> State {
         var state = state
         switch mutation {

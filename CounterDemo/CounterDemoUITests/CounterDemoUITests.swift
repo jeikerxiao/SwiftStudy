@@ -12,6 +12,7 @@ import XCTest
 
 import ReactorKit
 import RxSwift
+import RxExpect
 
 
 class CounterDemoUITests: XCTestCase {
