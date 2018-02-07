@@ -97,12 +97,9 @@
 		1171D099202AF52C0062C1AA /* URLNavigatorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1171D09A202AF52C0062C1AA /* AppDelegate.swift */,
-				1171D09C202AF52C0062C1AA /* ViewController.swift */,
-				1171D09E202AF52C0062C1AA /* Main.storyboard */,
-				1171D0A1202AF52C0062C1AA /* Assets.xcassets */,
-				1171D0A3202AF52C0062C1AA /* LaunchScreen.storyboard */,
-				1171D0A6202AF52C0062C1AA /* Info.plist */,
+				1171D0CA202AF5A30062C1AA /* Supporting Files */,
+				1171D0C9202AF5990062C1AA /* Resource */,
+				1171D0C8202AF58C0062C1AA /* Source */,
 			);
 			path = URLNavigatorDemo;
 			sourceTree = "<group>";
@@ -123,6 +120,33 @@
 				1171D0BC202AF52C0062C1AA /* Info.plist */,
 			);
 			path = URLNavigatorDemoUITests;
+			sourceTree = "<group>";
+		};
+		1171D0C8202AF58C0062C1AA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1171D09C202AF52C0062C1AA /* ViewController.swift */,
+				1171D09A202AF52C0062C1AA /* AppDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1171D0C9202AF5990062C1AA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1171D09E202AF52C0062C1AA /* Main.storyboard */,
+				1171D0A1202AF52C0062C1AA /* Assets.xcassets */,
+				1171D0A3202AF52C0062C1AA /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1171D0CA202AF5A30062C1AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1171D0A6202AF52C0062C1AA /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
-				INFOPLIST_FILE = URLNavigatorDemo/Info.plist;
+				INFOPLIST_FILE = "URLNavigatorDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeiker.Joke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZQ7W6RY9K;
-				INFOPLIST_FILE = URLNavigatorDemo/Info.plist;
+				INFOPLIST_FILE = "URLNavigatorDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeiker.Joke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
