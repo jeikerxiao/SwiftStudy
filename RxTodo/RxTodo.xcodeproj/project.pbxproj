@@ -14,6 +14,25 @@
 		11717647202AA7FA000D5907 /* RxTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11717646202AA7FA000D5907 /* RxTodoUITests.swift */; };
 		1171D060202AAA500062C1AA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D05F202AAA500062C1AA /* ListViewController.swift */; };
 		1171D062202AAA860062C1AA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D061202AAA860062C1AA /* EditViewController.swift */; };
+		1171D067202AAC840062C1AA /* ListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D066202AAC840062C1AA /* ListViewReactor.swift */; };
+		1171D069202AAC920062C1AA /* EditViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D068202AAC920062C1AA /* EditViewReactor.swift */; };
+		1171D06B202AACEE0062C1AA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D06A202AACEE0062C1AA /* Task.swift */; };
+		1171D06D202AACF80062C1AA /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D06C202AACF80062C1AA /* ModelType.swift */; };
+		1171D06F202ACDCB0062C1AA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D06E202ACDCB0062C1AA /* BaseViewController.swift */; };
+		1171D071202ACFBA0062C1AA /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D070202ACFBA0062C1AA /* BaseTableViewCell.swift */; };
+		1171D073202ACFD70062C1AA /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D072202ACFD70062C1AA /* TaskCell.swift */; };
+		1171D075202ACFEC0062C1AA /* TaskCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D074202ACFEC0062C1AA /* TaskCellReactor.swift */; };
+		1171D077202AD2F80062C1AA /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D076202AD2F80062C1AA /* Snap.swift */; };
+		1171D079202AD3260062C1AA /* String+BoundingRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D078202AD3260062C1AA /* String+BoundingRect.swift */; };
+		1171D07B202AD3350062C1AA /* Array+SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D07A202AD3350062C1AA /* Array+SectionModel.swift */; };
+		1171D07E202ADD940062C1AA /* RxOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D07D202ADD940062C1AA /* RxOperators.swift */; };
+		1171D080202ADDFE0062C1AA /* ObservableConvertibleType+Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D07F202ADDFE0062C1AA /* ObservableConvertibleType+Void.swift */; };
+		1171D082202ADF020062C1AA /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D081202ADF020062C1AA /* AlertService.swift */; };
+		1171D084202ADF230062C1AA /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D083202ADF230062C1AA /* BaseService.swift */; };
+		1171D086202ADF470062C1AA /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D085202ADF470062C1AA /* ServiceProvider.swift */; };
+		1171D088202ADF6B0062C1AA /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D087202ADF6B0062C1AA /* TaskService.swift */; };
+		1171D08A202ADF830062C1AA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D089202ADF830062C1AA /* UserDefaultsService.swift */; };
+		1171D08D202ADFD40062C1AA /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1171D08C202ADFD40062C1AA /* UserDefaultsKey.swift */; };
 		AC7EE206883D57741AC48BEF /* Pods_RxTodo_RxTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6A1E81A4E7F18825C9E244 /* Pods_RxTodo_RxTodoTests.framework */; };
 		E76182148369AC6956080E53 /* Pods_RxTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5BB6868913E8B38FCE07E1 /* Pods_RxTodo.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +68,25 @@
 		11717648202AA7FA000D5907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1171D05F202AAA500062C1AA /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1171D061202AAA860062C1AA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		1171D066202AAC840062C1AA /* ListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewReactor.swift; sourceTree = "<group>"; };
+		1171D068202AAC920062C1AA /* EditViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewReactor.swift; sourceTree = "<group>"; };
+		1171D06A202AACEE0062C1AA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		1171D06C202AACF80062C1AA /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		1171D06E202ACDCB0062C1AA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1171D070202ACFBA0062C1AA /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		1171D072202ACFD70062C1AA /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		1171D074202ACFEC0062C1AA /* TaskCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellReactor.swift; sourceTree = "<group>"; };
+		1171D076202AD2F80062C1AA /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		1171D078202AD3260062C1AA /* String+BoundingRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BoundingRect.swift"; sourceTree = "<group>"; };
+		1171D07A202AD3350062C1AA /* Array+SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SectionModel.swift"; sourceTree = "<group>"; };
+		1171D07D202ADD940062C1AA /* RxOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxOperators.swift; sourceTree = "<group>"; };
+		1171D07F202ADDFE0062C1AA /* ObservableConvertibleType+Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableConvertibleType+Void.swift"; sourceTree = "<group>"; };
+		1171D081202ADF020062C1AA /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		1171D083202ADF230062C1AA /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		1171D085202ADF470062C1AA /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		1171D087202ADF6B0062C1AA /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		1171D089202ADF830062C1AA /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		1171D08C202ADFD40062C1AA /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		58799FE4EA9D56C8EEE6B64B /* Pods-RxTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTodo/Pods-RxTodo.debug.xcconfig"; sourceTree = "<group>"; };
 		CACB090CBE16F8232129CDA3 /* Pods-RxTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTodo/Pods-RxTodo.release.xcconfig"; sourceTree = "<group>"; };
 		CC5BB6868913E8B38FCE07E1 /* Pods_RxTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +153,9 @@
 				1171D05C202AA9FA0062C1AA /* View */,
 				1171D063202AAA900062C1AA /* Reactor */,
 				1171D05E202AAA110062C1AA /* Service */,
+				1171D08B202ADFCB0062C1AA /* Types */,
 				1171D05D202AAA010062C1AA /* Model */,
+				1171D07C202ADD7D0062C1AA /* Rx */,
 				1171D065202AAAE50062C1AA /* Util */,
 				1171762D202AA7FA000D5907 /* Assets.xcassets */,
 				1171762F202AA7FA000D5907 /* LaunchScreen.storyboard */,
@@ -154,6 +194,7 @@
 		1171D05C202AA9FA0062C1AA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1171D072202ACFD70062C1AA /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +202,8 @@
 		1171D05D202AAA010062C1AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1171D06C202AACF80062C1AA /* ModelType.swift */,
+				1171D06A202AACEE0062C1AA /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +211,10 @@
 		1171D05E202AAA110062C1AA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1171D081202ADF020062C1AA /* AlertService.swift */,
+				1171D085202ADF470062C1AA /* ServiceProvider.swift */,
+				1171D087202ADF6B0062C1AA /* TaskService.swift */,
+				1171D089202ADF830062C1AA /* UserDefaultsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -175,6 +222,9 @@
 		1171D063202AAA900062C1AA /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
+				1171D066202AAC840062C1AA /* ListViewReactor.swift */,
+				1171D068202AAC920062C1AA /* EditViewReactor.swift */,
+				1171D074202ACFEC0062C1AA /* TaskCellReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -182,6 +232,9 @@
 		1171D064202AAABF0062C1AA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				1171D06E202ACDCB0062C1AA /* BaseViewController.swift */,
+				1171D070202ACFBA0062C1AA /* BaseTableViewCell.swift */,
+				1171D083202ADF230062C1AA /* BaseService.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -189,8 +242,28 @@
 		1171D065202AAAE50062C1AA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				1171D076202AD2F80062C1AA /* Snap.swift */,
+				1171D078202AD3260062C1AA /* String+BoundingRect.swift */,
+				1171D07A202AD3350062C1AA /* Array+SectionModel.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		1171D07C202ADD7D0062C1AA /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				1171D07D202ADD940062C1AA /* RxOperators.swift */,
+				1171D07F202ADDFE0062C1AA /* ObservableConvertibleType+Void.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		1171D08B202ADFCB0062C1AA /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1171D08C202ADFD40062C1AA /* UserDefaultsKey.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 		25124ABBC6399C16E26A07E9 /* Pods */ = {
@@ -509,9 +582,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1171D088202ADF6B0062C1AA /* TaskService.swift in Sources */,
+				1171D080202ADDFE0062C1AA /* ObservableConvertibleType+Void.swift in Sources */,
 				1171D062202AAA860062C1AA /* EditViewController.swift in Sources */,
 				11717627202AA7FA000D5907 /* AppDelegate.swift in Sources */,
 				1171D060202AAA500062C1AA /* ListViewController.swift in Sources */,
+				1171D086202ADF470062C1AA /* ServiceProvider.swift in Sources */,
+				1171D079202AD3260062C1AA /* String+BoundingRect.swift in Sources */,
+				1171D069202AAC920062C1AA /* EditViewReactor.swift in Sources */,
+				1171D073202ACFD70062C1AA /* TaskCell.swift in Sources */,
+				1171D071202ACFBA0062C1AA /* BaseTableViewCell.swift in Sources */,
+				1171D08D202ADFD40062C1AA /* UserDefaultsKey.swift in Sources */,
+				1171D084202ADF230062C1AA /* BaseService.swift in Sources */,
+				1171D07B202AD3350062C1AA /* Array+SectionModel.swift in Sources */,
+				1171D075202ACFEC0062C1AA /* TaskCellReactor.swift in Sources */,
+				1171D07E202ADD940062C1AA /* RxOperators.swift in Sources */,
+				1171D06D202AACF80062C1AA /* ModelType.swift in Sources */,
+				1171D08A202ADF830062C1AA /* UserDefaultsService.swift in Sources */,
+				1171D06F202ACDCB0062C1AA /* BaseViewController.swift in Sources */,
+				1171D082202ADF020062C1AA /* AlertService.swift in Sources */,
+				1171D06B202AACEE0062C1AA /* Task.swift in Sources */,
+				1171D067202AAC840062C1AA /* ListViewReactor.swift in Sources */,
+				1171D077202AD2F80062C1AA /* Snap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

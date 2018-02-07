@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  RxTodo
+//  URLNavigatorDemo
 //
 //  Created by xiao on 2018/2/7.
 //  Copyright © 2018年 jeikerxiao. All rights reserved.
@@ -15,18 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.backgroundColor = .white
-        
-        let serviceProvider = ServiceProvider()
-        let reactor = ListViewReactor(provider: serviceProvider)
-        let viewController = ListViewController(reactor: reactor)
-        
-        let navigationController = UINavigationController(rootViewController: viewController)
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        self.window = window
+        // Override point for customization after application launch.
         return true
     }
 
