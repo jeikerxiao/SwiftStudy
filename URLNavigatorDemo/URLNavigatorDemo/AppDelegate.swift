@@ -7,16 +7,48 @@
 //
 
 import UIKit
+import URLNavigator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private var navigator: NavigatorType?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let navigator = Navigator()
+        
+        NavigationMap.initialize(navigator: navigator)
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = .white
+        window.makeKeyAndVisible()
+        
+        let userListViewController = UserListViewController(navigator: navigator)
+        window.rootViewController = UINavigationController(rootViewController: userListViewController)
+        
+        self.window = window
+        self.navigator = navigator
+        
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        // Try presenting the URL first
+        if self.navigator?.present(url, wrap: UINavigationController.self) != nil {
+            print("[Navigator] present: \(url)")
+            return true
+        }
+        
+        // Try opening the URL
+        if self.navigator?.open(url) == true {
+            print("[Navigator] open: \(url)")
+            return true
+        }
+        
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
