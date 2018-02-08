@@ -26,6 +26,7 @@ class UserViewController: UIViewController {
     init(navigator: NavigatorType, username: String) {
         self.navigator = navigator
         self.username = username
+        print("[Navigator] UserViewController: \(username)")
         super.init(nibName: nil, bundle: nil)
         self.title = "\(username)'s Repositories"
     }

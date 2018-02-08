@@ -23,7 +23,7 @@ enum NavigationMap {
         navigator.register("https://<path:_>", self.webViewControllerFactory)
         
         navigator.handle("navigator://alert", self.alert(navigator: navigator))
-        navigator.handle("navigator://<path:_>") {(url, values, context) -> Bool in
+        navigator.handle("navigator://<path:_>") { (url, values, context) -> Bool in
             // No navigator match, do analytics or fallback function here
             print("[Navigator] NavigationMap.\(#function):\(#line) - global fallback function is called")
             return true

@@ -47,7 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("[Navigator] open: \(url)")
             return true
         }
-        
+        print("[Navigator] open: failure")
+
         return false
     }
 
