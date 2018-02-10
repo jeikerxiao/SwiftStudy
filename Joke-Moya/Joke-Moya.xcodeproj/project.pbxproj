@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		11924A15202434D4003A9E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A14202434D4003A9E8F /* AppDelegate.swift */; };
 		11924A17202434D4003A9E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A16202434D4003A9E8F /* ViewController.swift */; };
-		11924A1A202434D4003A9E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11924A18202434D4003A9E8F /* Main.storyboard */; };
 		11924A1C202434D4003A9E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11924A1B202434D4003A9E8F /* Assets.xcassets */; };
 		11924A1F202434D4003A9E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11924A1D202434D4003A9E8F /* LaunchScreen.storyboard */; };
 		11924A2A202434D4003A9E8F /* Joke_MoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11924A29202434D4003A9E8F /* Joke_MoyaTests.swift */; };
@@ -56,7 +55,6 @@
 		11924A11202434D4003A9E8F /* Joke-Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke-Moya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11924A14202434D4003A9E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11924A16202434D4003A9E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11924A19202434D4003A9E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11924A1B202434D4003A9E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11924A1E202434D4003A9E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11924A20202434D4003A9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				11924A14202434D4003A9E8F /* AppDelegate.swift */,
-				11924A18202434D4003A9E8F /* Main.storyboard */,
 				11924A1B202434D4003A9E8F /* Assets.xcassets */,
 				11924A1D202434D4003A9E8F /* LaunchScreen.storyboard */,
 			);
@@ -448,7 +445,6 @@
 			files = (
 				11924A1F202434D4003A9E8F /* LaunchScreen.storyboard in Resources */,
 				11924A1C202434D4003A9E8F /* Assets.xcassets in Resources */,
-				11924A1A202434D4003A9E8F /* Main.storyboard in Resources */,
 				11924A6A202456E8003A9E8F /* JKViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,14 +716,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		11924A18202434D4003A9E8F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11924A19202434D4003A9E8F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11924A1D202434D4003A9E8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
